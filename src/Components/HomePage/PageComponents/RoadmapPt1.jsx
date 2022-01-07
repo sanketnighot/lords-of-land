@@ -59,6 +59,7 @@ const RoadmapPt1 = () => {
                     </div>
                 </span>
                 </div>
+                
                 <div className="main-info-3">
                 <ul className="tri-info">
                     <span className="s-cir">
@@ -117,11 +118,7 @@ const RoadmapPt1 = () => {
                     <p>Where our landlords will be rewarded with something BIG!</p></li>
                 
                 </ul>
-                <span id="player">
-                    <div id="outer">
-                    <div id="inner"></div>
-                    </div>
-                </span>
+              
                 </div>
 
                 </div>

@@ -1,8 +1,7 @@
 @media screen and (min-width: 1400px) {
 div.coming-soon {
     /* background-color : rgb(172, 30, 30); */
-    width: 40%;
-    height: auto;
+    width: 60%;
 }
 
 h3.metaverse-div{
@@ -14,12 +13,13 @@ div.discord-btn {
     height: 3%;
     /* background-color: red; */
 
-    
 }
 
 div.discord-btn button{
     width: 100%;
 }
-
-
 }
+/* 
+.roadmapclass {
+    background-color: red;
+} */

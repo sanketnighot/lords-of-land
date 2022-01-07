@@ -1,23 +1,19 @@
 import React from 'react';
 import featureback from './images/featureback.png';
-import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import slider1 from './images/slider1.png';
 import slider2 from './images/slider2.png';
 import slider3 from './images/slider3.png';
 import slider4 from './images/slider4.png';
-
-import mint from './images/mint.png'
-import BusinessStanderds from './images/BusinessStanderds.png'
-import zeenews from './images/zeenews.png'
-import HindustanTimesLogo from './images/HindustanTimesLogo.png'
+import styled from 'styled-components';
+import Featured from './Featured';
 
 const Features = () => {
     return (
         <>
         <div>
-            <div className='dislpay-comp' style={{backgroundImage: 'url(' + featureback + ')', backgroundSize: "cover", height: '100vh', minHeight: '100vh', margin: 0, display: 'block',  justifyContent:'center', alignItems:'center' }}>
+            <div className='dislpay-comp' style={{backgroundImage: 'url(' + featureback + ')', backgroundSize: "100% 100%", height: '100vh', minHeight: '100vh', margin: 0, display: 'block',  justifyContent:'center', alignItems:'center' }}>
                 <Feature>Features of LOL</Feature>
                 <Carouseldiv>
                     <Carousel>
@@ -43,14 +39,10 @@ const Features = () => {
                     </Carousel>
                 </Carouseldiv>
             <Feature><strong>Featured in</strong></Feature>
-                <Gallary>
-                    <img className="" src={BusinessStanderds} alt="Two"/>
-                    <img className="" src={mint} alt="One"/>
-                    <img className="" src={zeenews} alt="Two"/>
-                    <img className="" src={HindustanTimesLogo} alt="Two"/>
-                </Gallary>    
+                <div>
+                    <Featured/>
+                </div>
             </div>
-            
         </div>
         </>
     )
@@ -74,13 +66,6 @@ const Feature = styled.h1`
 
 const Carouseldiv = styled.div`
     width: 50%;
-    margin auto
+    margin: auto
 `;
 
-const Gallary = styled.div`
-    height: 10%;
-    width: 60%;
-    align-items: center;
-    display: flex;
-    margin: auto;
-`;

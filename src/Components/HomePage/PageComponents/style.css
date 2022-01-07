@@ -371,7 +371,7 @@ html {
 }
 .sliderslick h2,
 h3 {
-  text-align: center;
+  /* text-align: center; */
   margin: 20px 0px;
   padding: 0px;
   text-transform: capitalize;
@@ -868,7 +868,7 @@ svg:not(:root) {
 .hut {
   position: relative;
   background-image: url("./images/hut.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -997,16 +997,14 @@ svg:not(:root) {
   position: relative;
 }
 .logo::before {
-  top: -178px;
   content: "";
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   background-image: url(./images/logo.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  left: 476px;
+  background-size: cover;
   position: absolute;
-  display: inline-block;
+  display: flex;
 }
 .last h3 {
   text-align: center;
@@ -1042,7 +1040,6 @@ svg:not(:root) {
 .more-play {
   color: #000;
   font-size: 14px;
-
   text-transform: uppercase;
   font-family: "uni-bold Sans";
   border: none !important;
@@ -1096,7 +1093,6 @@ svg:not(:root) {
     left: 141px;
   }
   .logo::before {
-    top: -134px;
     content: "";
     left: 338px;
     width: 300px;
@@ -1177,7 +1173,6 @@ svg:not(:root) {
     left: 141px;
   }
   .logo::before {
-    top: -134px;
     content: "";
     left: 338px;
     width: 300px;
