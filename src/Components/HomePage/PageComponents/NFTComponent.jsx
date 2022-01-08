@@ -5,12 +5,12 @@ import Lords3 from './images//Lords03.png';
 import {Container, Row, Col, Card, CardGroup} from 'react-bootstrap/';
 import JoinDiscord from './images/JoinDiscord.png';
 import styled from 'styled-components';
-import './style.css';
+// import './style.css';
 const NFTComponent = () => {
     return (
         <>
-            <div>
-            <section className="nft" style={{marginTop: "4%"}}>
+            <NFTDiv style={{marginTop: "4%", height:"40%"}}>
+            <section className="nft">
                     <Container>
                     <Row >
                     <Col>
@@ -22,7 +22,7 @@ const NFTComponent = () => {
             <section>
                     <Container>
                         <Row>
-                        <div className="nft-para">
+                        <div className="nft-para" style={{marginTop:"4%"}}>
                             <p>Lords of Lands are a prestigious collection of unique Avatars #Lords, and virtual #Lands.
                             #LOL allows users to mint NFTs as avatars, gadgets, wearables, skins as well as buy a space of future real
                             estate.
@@ -45,7 +45,7 @@ const NFTComponent = () => {
                     </div>
                 </Row>
                 </Container>
-            </section></div>
+            </section></NFTDiv>
             <section className="meta">
                 <Container>
                 <Row>
@@ -112,7 +112,7 @@ const Text = styled.h1`
     color: #5c3dc5;
     font-size: 350%;
     text-align: center;
-    padding: 5%;
+    margin: 2%;
     font-family: uni-regular sans;
     background: -webkit-linear-gradient(#2afff0, #66ffeb);
     -webkit-background-clip: text;
@@ -124,11 +124,10 @@ const Text = styled.h1`
 
 const Reveal = styled.button`
     width: 165px;
+    height: 40px;
     text-align: center;
-    vertical-align: middle;
-    display: flex;
     text-transform: uppercase;
-    padding: 1%;
+    margin: 25%;
     font-size: 20px;
     font-weight: bold;
     color: #000;
@@ -138,3 +137,15 @@ const Reveal = styled.button`
     cursor: pointer;
     text-shadow: 2px 2px 8px black
 `;
+
+
+const NFTDiv = styled.div`
+@media screen and (max-width:1000px) {
+    padding-top: 40%
+}
+
+@media screen and (max-width: 760px) {
+    padding-top: 0%;
+}
+
+`

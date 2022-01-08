@@ -4,7 +4,7 @@ import Features from './PageComponents/Features';
 import Roadmap from './PageComponents/Roadmap';
 import NFTComponent from './PageComponents/NFTComponent';
 import Footer from './PageComponents/Footer';
-
+import Test from './PageComponents/Test';
 const Home = () => {
     return (
         <>
@@ -14,6 +14,7 @@ const Home = () => {
             <Roadmap/>
             <NFTComponent/>
             {/* <Footer/> */}
+            {/* <Test/> */}
         </div>
 
         </>

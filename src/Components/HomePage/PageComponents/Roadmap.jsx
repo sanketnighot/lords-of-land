@@ -11,8 +11,9 @@ import {Container, Row, Col} from 'react-bootstrap/';
 const Roadmap = () => {
     return (
         <>
-        <div>
+        
             <div className='dislpay-comp' style={{backgroundImage: 'url(' + featuredback + ')', backgroundSize: "100% 100%", height: '100vh', minHeight: '100vh', margin: 0, display: 'block',  justifyContent:'center', alignItems:'center' }} >
+            <RoadmapDiv>
                 <Text>Roadmap</Text>
                     
                 <Container className="roadmapclass">
@@ -23,10 +24,10 @@ const Roadmap = () => {
                         </Col>
                     </Row>
                 </Container>
-              
+            </RoadmapDiv>
             </div>
 
-        </div>
+        
         </>
     )
 }
@@ -46,3 +47,10 @@ const Text = styled.h1`
     font-weight: 900;
     text-shadow: 2px 2px 5px #12be29b7;
 `;
+
+const RoadmapDiv = styled.div`
+@media screen and (max-width:1000px) {
+    padding-top: 50%
+}
+
+`

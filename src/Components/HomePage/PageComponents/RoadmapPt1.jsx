@@ -6,7 +6,7 @@ import imports from './images/imports.png';
 import rentdistribution from './images/rentdistribution.png';
 import Book from './images/Book.png';
 import Candle from './images/Candle.png';
-import './style.css'
+// import './style.css'
 import logotop from './images/logo-top.png';
 
 const RoadmapPt1 = () => {

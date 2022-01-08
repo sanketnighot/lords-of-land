@@ -66,6 +66,11 @@ const Feature = styled.h1`
 
 const Carouseldiv = styled.div`
     width: 50%;
-    margin: auto
+    margin: auto;
+
+    @media screen and (max-width:1000px) {
+        width: 80%;
+        margin: 10%;
+    }
 `;
 

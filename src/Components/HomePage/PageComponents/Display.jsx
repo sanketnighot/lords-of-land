@@ -3,7 +3,7 @@ import cover from './images/cover.png';
 import button from './images/button.png';
 import styled from 'styled-components';
 import {Container, Row, Col} from 'react-bootstrap/';
-// import './responsiveStyle.css';
+
 
 const Display = () => {
     return (
@@ -38,6 +38,7 @@ const ComingSoon = styled.div`
         display: block;
         align-items: center;
         text-align: center;
+        margin-top: 90%
     }
 `;
 const DiscordBtn = styled.button`
