@@ -1,26 +1,26 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap/';
 import './style.css';
+import './responsiveStyle.css';
 import styled from 'styled-components';
 import Logo from './images/logo.png'
 
+
 const Footer = () => {
     return (
-        <>  
-            
-                <Container style={{marginTop:"20%"}} > 
-                    <Row className="justify-content-md-center">
-                        <img src={Logo} alt="" style={{height:"300px", width:"300px"}}/>
-                    </Row>
-                    <Row >
-                        <div className="last">
-                        <Col xl="auto">
-                            <Text>Lords of Lands NFT Property</Text>
-                        </Col>
-                        </div>
-                    </Row>
-                </Container>            
-            
+        <>
+            <Container className="footer-Responsive" style={{marginTop:"20%"}} > 
+                <Row className="justify-content-sm-center">
+                    <img src={Logo} alt="" style={{height:"300px", width:"300px"}}/>
+                </Row>
+                <Row >
+                    <div>
+                    <Col xl="auto">
+                        <Text>Lords of Lands NFT Property</Text>
+                    </Col>
+                    </div>
+                </Row>
+            </Container>
         </>
     )
 }

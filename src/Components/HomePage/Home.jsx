@@ -13,7 +13,7 @@ const Home = () => {
             <Features/>
             <Roadmap/>
             <NFTComponent/>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
 
         </>

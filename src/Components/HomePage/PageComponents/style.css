@@ -868,9 +868,8 @@ svg:not(:root) {
 .hut {
   position: relative;
   background-image: url("./images/hut.png");
-  background-size: 100% 100%;
+  background-size:  cover, contain;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 .blur-box {
   width: 500px;
@@ -924,9 +923,9 @@ svg:not(:root) {
 }
 .teams {
   background: url("./images/playerbackground.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 135vh;
+  height: 70vh;
 }
 .teams h2 {
   padding: 20px 0px;
@@ -1117,7 +1116,7 @@ svg:not(:root) {
     margin-left: 424px !important;
   }
   .teams {
-    height: 110vh;
+    height: 60vh;
   }
   .part {
     width: 259px;

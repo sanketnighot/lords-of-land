@@ -2,30 +2,20 @@ import React from 'react'
 import Lords1 from './images/Lords01.png';
 import Lords2 from './images//Lords02.png';
 import Lords3 from './images//Lords03.png';
-import {Container, Row, Col} from 'react-bootstrap/';
+import {Container, Row, Col, Card, CardGroup} from 'react-bootstrap/';
 import JoinDiscord from './images/JoinDiscord.png';
 import styled from 'styled-components';
 import './style.css';
 const NFTComponent = () => {
     return (
         <>
-            <section className="nft" style={{marginTop: "4%", height:"100vh"}}>
+            <div>
+            <section className="nft" style={{marginTop: "4%"}}>
                     <Container>
-                    <Row>
-                        <div className="nft-text">
-                        <svg width="100%" height="auto">
-                            <defs>
-                            <linearGradient id="gradient" y1="0" y2="1">
-                                <stop stop-color="#EEF85B" offset="0" />
-                                <stop stop-color="#09E5C3" offset="1" />
-                            </linearGradient>
-                            </defs>
-                            <g>
-                            <text id="text" y="100" font-family=" 'uni-heavy sans', cursive" font-size="120" font-weight="400"
-                                stroke-width="2" stroke="url(#gradient)" fill="#232d2d" style={{boxShadow: "inset 14px -16px 20px 20px #000" }}>NFT'S</text>
-                            </g>
-                        </svg>
-                        </div>
+                    <Row >
+                    <Col>
+                        <Text>Non Fungible Tokens {"(NFT's)"}</Text>
+                        </Col>
                     </Row>
                     </Container>
             </section>
@@ -47,13 +37,15 @@ const NFTComponent = () => {
                 <Container>
                 <Row>
                     <div className="blur-box">
-                    <p>Power of Digital Land </p>
-                    <p>Lords of the virtual world</p>
-                    <h3>The MetaLords to the Metalands</h3>
+                    <strong>
+                        <p>Power of Digital Land </p>
+                        <p>Lords of the virtual world</p>
+                        <h3>The MetaLords to the Metalands</h3>
+                    </strong>
                     </div>
                 </Row>
                 </Container>
-            </section>
+            </section></div>
             <section className="meta">
                 <Container>
                 <Row>
@@ -64,44 +56,51 @@ const NFTComponent = () => {
                 </Container>
             </section>
             <section className="teams">
-                <Container>
-                <Row>
                     <div className="play-team">
                     <Text>Lords</Text>
                         <ul className="player">
                         <Container fluid="xl">
-                            <Row className="justify-content-xl-center">
-                                <Col xl={{span: 3, offset: 1}}>
+                            <Row className="justify-content-lg-center g-4">
+                                <CardGroup>
+                                <Col>
+                                <Card style= {{width:"89%", alignItems:"center", background:"transparent"}}>
                                 <div className="bg-gradient">
-                                    <li className="play"><img src={Lords1} alt=""/>
-                                    
+                                    <li className="play"><Card.Img variant="top" src={Lords1} alt=""/>
                                     <p></p>
                                     </li>
                                 </div>
+                                </Card>
                                 </Col>
-                                <Col xl={{span: 3, offset: 1}}>
+                                <Col>
+                                <Card style= {{width:"89%", alignItems:"center", background:"transparent"}}>
                                     <div className="bg-gradient">
-                                        <li className="play"><img src={Lords2} alt=""/>
-                                       
+                                        <li className="play"><Card.Img variant="top" src={Lords2} alt=""/>
                                         <p></p>
                                         </li>
                                     </div>
+                                </Card>
                                 </Col>
-                                <Col xl={{span: 3, offset: 1}}>
+                                <Col>
+                                <Card style= {{width:"89%", alignItems:"center", background:"transparent"}}>
                                     <div className="bg-gradient">
-                                        <li className="play"><img src={Lords3} alt=""/>
-                                        
+                                        <li className="play"><Card.Img variant="top" src={Lords3} alt=""/>
                                         <p></p>
                                         </li>
                                     </div>
+                                </Card>
                                 </Col>
+                                </CardGroup>
+                                
+                            </Row>
+                            <Row className="justify-content-md-center">
+                            <Col md="4">
+                                <Reveal>Reveal soon</Reveal>
+                            </Col>   
                             </Row>
                         </Container>
                         </ul>
-                    <button className="more-play">Reveal soon</button>
+                    
                     </div>
-                </Row>
-                </Container>
             </section>
         </>
     )
@@ -121,4 +120,21 @@ const Text = styled.h1`
     -webkit-text-fill-color: transparent;
     font-weight: 900;
     text-shadow: 2px 2px 5px #12be29b7;
+`;
+
+const Reveal = styled.button`
+    width: 165px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    text-transform: uppercase;
+    padding: 1%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    background: linear-gradient(#2afff0, #7eff66);
+    border-radius: 25px !important;
+    cursor: pointer;
+    text-shadow: 2px 2px 8px black
 `;
