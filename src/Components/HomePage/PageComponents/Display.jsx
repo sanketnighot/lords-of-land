@@ -3,24 +3,25 @@ import cover from './images/cover.png';
 import button from './images/button.png';
 import styled from 'styled-components';
 import {Container, Row, Col} from 'react-bootstrap/';
-
+import './responsiveStyle.css';
 
 const Display = () => {
     return (
         <div style={{backgroundColor: "black", height:"100vh", minHeight: "100vh"}}>
-        <div className='display-comp' style={{background: "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))", backgroundImage: 'url(' + cover + ')', backgroundSize: "100% 100%",backgroundRepeat: "no-repeat", height: '100%', width:"100%" }}>
+        <div className='display-comp' style={{background: "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))", backgroundImage: 'url(' + cover + ')', backgroundSize: "cover",backgroundRepeat: "no-repeat", height: '100%', width:"100%", backgroundPosition: "75% 50%"}}>
         <Container>
             <Row>
                 <Col xs={12} md={8}> 
             <ComingSoon className='coming-soon'>
-                <strong><h1 style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange", fontSize: "350%"}}>COMING SOON</h1></strong>
-                <h2 style={{color: "#ffffff", textShadow: "2px 2px 5px black", fontSize: "150%"}}>World's first virtual land NFT's, giving its holders monthly rentals in ETHEREUM!</h2>
-                <h3 className="metaverse-div" style={{color: "#ffffff",textShadow: "2px 2px 10px lime", fontSize: "225%"}}>Claim your Metaverse Lordship</h3>
+                <strong><h1 className="coming-text" style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange", fontSize: "300%"}}>COMING SOON</h1></strong>
+                <Rest>
+                <h2 style={{color: "#ffffff", textShadow: "2px 2px 5px black", fontSize: "100%"}}>World's first virtual land NFT's, giving its holders monthly rentals in ETHEREUM!</h2>
+                <h3 className="metaverse-div" style={{color: "#ffffff",textShadow: "2px 2px 20px lime", fontSize: "205%"}}>Claim your Metaverse Lordship</h3>
                 <div className="discord-btn">
                     <DiscordBtn  onClick = {()=> {console.log("clicked")}}>
-                        <img style= {{  width: "30px", height: "21px"}} src={button} alt=""/> JOIN DISCORD
+                        <img style= {{  width: "25px", height: "17px"}} src={button} alt=""/> JOIN DISCORD
                     </DiscordBtn>
-                </div>
+                </div></Rest>
             </ComingSoon>
         </Col>
             </Row>
@@ -38,7 +39,8 @@ const ComingSoon = styled.div`
         display: block;
         align-items: center;
         text-align: center;
-        margin-top: 90%
+        margin-bottom: 0%;
+        fontsize: 100%;
     }
 `;
 const DiscordBtn = styled.button`
@@ -54,7 +56,18 @@ const DiscordBtn = styled.button`
     background: linear-gradient(#2afff0, #7eff66);
     border-radius: 25px !important;
     cursor: pointer;
-    text-shadow: 2px 2px 8px black
+    text-shadow: 2px 2px 8px black;
+    @media screen and (max-width:768px){
+        width: 220px;
+        height: 80px;
+    }
 `;
 
 export default Display;
+
+
+const Rest = styled.div`
+@media screen and (max-width:768px) {
+    margin-top: 350px;
+}
+`

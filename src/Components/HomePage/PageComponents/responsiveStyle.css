@@ -23,3 +23,9 @@ div.discord-btn button{
 .roadmapclass {
     background-color: red;
 } */
+
+@media screen and (max-width: 500px){ 
+    h1.coming-text {
+        background-color: red;
+}
+}
