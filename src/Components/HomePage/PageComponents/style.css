@@ -50,11 +50,8 @@ body {
   background-color: #080e18  !important;
 }
 header {
-  height: 121vh;
-  background: linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3)),
-    url("./images/cover.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3)),url("./images/cover.png");
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 15px;
 }
 .coming {
   font-size: 33px;
@@ -66,6 +63,7 @@ header {
 }
 #navigation {
   display: flex;
+  height: 5vh;
 }
 .logo-top {
   width: 81px;
@@ -214,14 +212,14 @@ header {
   background-color: rgba(0, 0, 0, 0.801);
 }
 #nav {
-  padding: 0px;
-  margin: 0 0px;
-  transition: 1s ease;
+  padding: 50px;
+  margin: 500px 0px;
+  transition: 3s ease;
   display: none;
 }
 .navul {
   padding-top: 70px;
-  padding-left: 86px;
+  padding-left: 90px;
 }
 .navli a {
   text-decoration: none !important;
@@ -841,9 +839,6 @@ h3 {
 }
 /* road map css */
 .nft-text {
-  padding-top: 50px;
-  padding-left: 417px;
-  width: 100%;
   text-align: center;
 }
 svg:not(:root) {

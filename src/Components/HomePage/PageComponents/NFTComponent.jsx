@@ -12,9 +12,25 @@ const NFTComponent = () => {
             <NFTDiv style={{marginTop: "4%", height:"40%"}}>
             <section className="nft">
                     <Container>
-                    <Row >
+                    <Row className="justify-content-center">
                     <Col>
-                        <Text>Non Fungible Tokens {"(NFT's)"}</Text>
+                        {/* <Text>Non Fungible Tokens {"(NFT's)"}</Text> */}
+                        <div class="nft-text" width="30%" height="auto">
+                            <svg >
+                                <defs>
+                                <linearGradient id="gradient" y1="0" y2="1">
+                                    <stop stop-color="#EEF85B" offset="0" />
+                                    <stop stop-color="#09E5C3" offset="1" />
+                                </linearGradient>
+                                </defs>
+                                <g>
+                                <text id="text" y="100" font-family=" 'uni-heavy sans', cursive" font-size="120" font-weight="400"
+                                    stroke-width="2" stroke="url(#gradient)" fill="#232d2d">NFT'S</text>
+                                </g>
+
+                            </svg>
+
+                        </div>
                         </Col>
                     </Row>
                     </Container>
@@ -22,7 +38,7 @@ const NFTComponent = () => {
             <section>
                     <Container>
                         <Row>
-                        <div className="nft-para" style={{marginTop:"4%"}}>
+                        <div className="nft-para" style={{}}>
                             <p>Lords of Lands are a prestigious collection of unique Avatars #Lords, and virtual #Lands.
                             #LOL allows users to mint NFTs as avatars, gadgets, wearables, skins as well as buy a space of future real
                             estate.
@@ -55,7 +71,7 @@ const NFTComponent = () => {
                 </Row>
                 </Container>
             </section>
-            <section className="teams">
+            {/* <section className="teams">
                     <div className="play-team">
                     <Text>Lords</Text>
                         <ul className="player">
@@ -101,7 +117,7 @@ const NFTComponent = () => {
                         </ul>
                     
                     </div>
-            </section>
+            </section> */}
         </>
     )
 }
@@ -140,8 +156,8 @@ const Reveal = styled.button`
 
 
 const NFTDiv = styled.div`
+align-items: center;
 @media screen and (max-width:1000px) {
-    padding-top: 40%
 }
 
 @media screen and (max-width: 760px) {

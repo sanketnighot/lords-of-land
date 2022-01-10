@@ -1,7 +1,6 @@
 import React from 'react';
 import Display from './PageComponents/Display';
 import Features from './PageComponents/Features';
-import Roadmap from './PageComponents/Roadmap';
 import NFTComponent from './PageComponents/NFTComponent';
 import Footer from './PageComponents/Footer';
 import Test from './PageComponents/Test';
@@ -11,9 +10,8 @@ const Home = () => {
         <div>
             <Display/>
             <Features/>
-            <Roadmap/>
             <NFTComponent/>
-            {/* <Footer/> */}
+            <Footer/>
             {/* <Test/> */}
         </div>
 

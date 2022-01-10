@@ -8,27 +8,27 @@ import styled from 'styled-components';
 
 const Featured = () => {
     return (
-        <div>
+        <div style={{margin: "auto", display:"flex", textAlign:"center"}}>
                 <Container>
-                <Row xs={1} md={2} className="justify-content-lg-center g-4">
-                        <Col>
-                        <Card style={{width:"350px", height:"100px", background: "transparent"}}>
+                <Row xs={1} md={2} className="justify-content-lg-center g-2">
+                        <Col xs lg="3">
+                        <Card style={{width:"250px", height:"100px", background: "transparent"}}>
                             <Card.Img variant="top" src={BusinessStanderds} />
                         </Card>
                         </Col>
 
-                        <Col>
-                        <Card style={{width:"350px", height:"100px", background: "transparent"}}>
+                        <Col xs lg="3">
+                        <Card style={{width:"250px", height:"100px", background: "transparent"}}>
                             <Card.Img variant="top" src={HindustanTimesLogo} />
                         </Card>
                         </Col>
-                        <Col>
-                        <Card style={{width:"350px", height:"100px", background: "transparent"}}>
+                        <Col xs lg="3">
+                        <Card style={{width:"250px", height:"100px", background: "transparent"}}>
                             <Card.Img variant="top" src={zeenews} />
                         </Card>
                         </Col>
-                        <Col>
-                        <Card style={{width:"350px", height:"100px", background: "transparent"}}>
+                        <Col xs lg="3">
+                        <Card style={{width:"250px", height:"100px", background: "transparent"}}>
                             <Card.Img variant="top" src={mint} />
                         </Card>
                         </Col>
