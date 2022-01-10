@@ -875,8 +875,8 @@ svg:not(:root) {
   text-align: center;
   padding: 10px 20px;
   border: 2px solid #b2ec70;
-  box-shadow: inset 0 7em 47em #2afff08a;
-  border-radius: 3px;
+  box-shadow: inset 0 7em 47em #2afff14b;
+  border-radius: 20px;
 }
 .blur-box p {
   font-family: uni-heavy Sans;

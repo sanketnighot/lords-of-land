@@ -16,9 +16,11 @@ const Display = () => {
             <Row className="">
                 <Col xs={12} md={8}> 
             <ComingSoon className='coming-soon'>
-                <strong><h1 style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange"}}>COMING SOON !</h1></strong>
+                {/* <strong><h1 style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange"}}>COMING SOON !</h1></strong> */}
             
-                <h2 style={{color: "#ffffff", textShadow: "2px 2px 5px black", fontSize: "100%"}}>WORLD'S FIRST VIRTUAL LAND NFTS, GIVING ITS HOLDERS MONTHLY RENTALS IN ETHEREUM !</h2>
+                <h2 style={{color: "#ffffff", textShadow: "2px 2px 5px black", fontSize: "100%"}}>
+                <span style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange"}}>COMING SOON !</span>
+                WORLD'S FIRST VIRTUAL LAND NFTS, GIVING ITS HOLDERS MONTHLY RENTALS IN ETHEREUM !</h2>
                 <h3 className="metaverse-div" style={{color: "#ffffff",textShadow: "2px 2px 20px lime"}}>Own Land in the <strong>ProperT Land Metaverse</strong></h3>
                 <div className="discord-btn">
                     <DiscordBtn  onClick = {()=> {console.log("clicked")}}>
@@ -59,7 +61,6 @@ const DiscordBtn = styled.button`
     background: linear-gradient(#2afff0, #7eff66);
     border-radius: 25px !important;
     cursor: pointer;
-    text-shadow: 2px 2px 8px black;
     ${'' /* @media screen and (max-width:768px){
         width: 220px;
         height: 80px;

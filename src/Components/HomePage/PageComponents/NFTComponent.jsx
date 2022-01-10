@@ -25,7 +25,7 @@ const NFTComponent = () => {
                                 </defs>
                                 <g>
                                 <text id="text" y="100" font-family=" 'uni-heavy sans', cursive" font-size="120" font-weight="400"
-                                    stroke-width="2" stroke="url(#gradient)" fill="#232d2d">NFT'S</text>
+                                    stroke-width="2" stroke="url(#gradient)" fill="#232d2d" style = {{boxShadow: "inset 14px -16px 20px 20px #000"}}>NFT'S</text>
                                 </g>
 
                             </svg>
@@ -49,8 +49,8 @@ const NFTComponent = () => {
                         </Row>
                     </Container>
             </section>
-            <section className="hut">
-                <Container>
+            <section className="hut" >
+                <Container style={{width:"50%", minWidth:"90%"}}>
                 <Row>
                     <div className="blur-box">
                     <strong>
