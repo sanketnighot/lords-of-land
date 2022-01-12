@@ -18,9 +18,9 @@ const Display = () => {
                     <ComingSoon className='coming-soon'>
                         {/* <strong><h1 style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange"}}>COMING SOON !</h1></strong> */}
                         <h2 style={{color: "#ffffff", textShadow: "2px 2px 5px black", fontSize: "220%"}}>
-                        <span style={{color: "#c4a2fa", textShadow: "2px 2px 15px orange"}}>COMING SOON ! </span>
+                        <span style={{color: "#c4a2fa", textShadow: "2px 2px 41px black", fontSize: "110%"}}>COMING SOON ! </span>
                         WORLD'S FIRST VIRTUAL LAND NFTS, GIVING ITS HOLDERS MONTHLY RENTALS IN ETHEREUM !</h2>
-                        <h2 className="metaverse-div" style={{color: "grey",textShadow: "2px 2px 20px black"}}>Own Land in the <strong>ProperT Land Metaverse</strong></h2>
+                        <h2 className="metaverse-div" style={{color: "grey", fontSize:"150%"}}>Own Land in the <strong>ProperT Land Metaverse</strong></h2>
                         <div className="discord-btn">
                             <DiscordBtn  onClick = {()=> {console.log("clicked")}}>
                                 <img style= {{  width: "25px", height: "17px"}} src={button} alt=""/> JOIN DISCORD

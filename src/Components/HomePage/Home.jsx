@@ -11,7 +11,7 @@ const Home = () => {
             <div className="navDisplay" id="navDisplay">
                 <Display/>
             </div>
-            <div className="navFeatures" id="navFeatures">
+            <div className="navFeatures" id="navFeatures" style={{marginTop:"10%"}}>
                 <Features/>
             </div>
             <div className="navNFT" id="navNFT">
