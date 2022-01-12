@@ -16,11 +16,11 @@ const Navbar = () => {
 
     const toggleClass = (e) => {
         if (e.target.childNodes[0].data === "HOME") {
-            setActiveHome(true); setActiveGame(false); setActiveMarket(false);
+            setActiveHome(true); setActiveGame(false); setActiveMarket(false); onClickMenu();
         } else if (e.target.childNodes[0].data === "GAMES") {
-            setActiveHome(false); setActiveGame(true); setActiveMarket(false);
+            setActiveHome(false); setActiveGame(true); setActiveMarket(false); onClickMenu();
         } else {
-            setActiveHome(false); setActiveGame(false); setActiveMarket(true);
+            setActiveHome(false); setActiveGame(false); setActiveMarket(true); onClickMenu();
         }
     }
     return (
