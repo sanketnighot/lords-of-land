@@ -10,7 +10,7 @@ import NFTs from './images/NFTs.png'
 const NFTComponent = () => {
     return (
         <>
-            <NFTDiv className="nftcomponent" style={{marginTop: "4%", height:"40%"}}>
+            <NFTDiv className="nftcomponent">
             <section className="nft">
                     <Container>
                     <Row className="justify-content-center">
@@ -142,11 +142,14 @@ const Reveal = styled.button`
 
 const NFTDiv = styled.div`
 align-items: center;
-@media screen and (max-width:1000px) {
+margin-top: 4%;
+height: 40%;
+@media screen and (max-width:763px) {
+    margin-top:85%;
 }
 
-@media screen and (max-width: 760px) {
-    padding-top: 0%;
+@media screen and (max-width: 763px) {
+    padding-top: 40%;
 }
 
 `

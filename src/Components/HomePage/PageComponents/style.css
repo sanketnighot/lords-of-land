@@ -867,6 +867,7 @@ svg:not(:root) {
   align-self: right;
   background-repeat: no-repeat;
   height: 100vh;
+  background-position: 75% 50%
 }
 .blur-box {
   width: 500px;
