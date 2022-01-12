@@ -11,7 +11,7 @@ import six from './images/six.png';
 const RoadmapResponsive = () => {
     return (
         <>
-            <Container>
+            <Container style={{marginBottom: "50%"}}>
                 <Row className="justify-content-md-center" style={{textAlign:"center"}}>
                     <Col xs lg="2">
                      <img style={{width:"15%"}} src={one} alt=""/>
