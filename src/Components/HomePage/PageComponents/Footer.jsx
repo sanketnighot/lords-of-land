@@ -12,7 +12,7 @@ const Footer = () => {
             <Container style={{marginTop:"1%", textAlign:"center"}} > 
                 <Row className="justify-content-lg-center">
                     <Col xs lg="8">
-                        <img style={{width:"50%", height:"70%"}} src={Logo} alt="" />
+                        <img style={{width:"50%"}} src={Logo} alt="" />
                     </Col>
                 </Row>
                 <Row className="justify-content-lg-center">
@@ -33,12 +33,10 @@ const Text = styled.h1`
     color: #5c3dc5;
     font-size: 250%;
     font-family: uni-regular sans;
-    background: -webkit-linear-gradient(#2afff0, #66ffeb);
+    background: -webkit-linear-gradient(#2afff0, #7eff66);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
-    text-shadow: 2px 2px 5px #12be29b7;
     justify-content: center;
-    margin-top: -20%;
 `;

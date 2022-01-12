@@ -1,44 +1,29 @@
 import React from 'react'
-import Lords1 from './images/Lords01.png';
-import Lords2 from './images//Lords02.png';
-import Lords3 from './images//Lords03.png';
+// import Lords1 from './images/Lords01.png';
+// import Lords2 from './images//Lords02.png';
+// import Lords3 from './images//Lords03.png';
 import {Container, Row, Col, Card, CardGroup} from 'react-bootstrap/';
 import JoinDiscord from './images/JoinDiscord.png';
 import styled from 'styled-components';
 // import './style.css';
+import NFTs from './images/NFTs.png'
 const NFTComponent = () => {
     return (
         <>
-            <NFTDiv style={{marginTop: "4%", height:"40%"}}>
+            <NFTDiv className="nftcomponent" style={{marginTop: "4%", height:"40%"}}>
             <section className="nft">
                     <Container>
                     <Row className="justify-content-center">
-                    <Col>
-                        {/* <Text>Non Fungible Tokens {"(NFT's)"}</Text> */}
-                        <div class="nft-text" width="30%" height="auto">
-                            <svg >
-                                <defs>
-                                <linearGradient id="gradient" y1="0" y2="1">
-                                    <stop stop-color="#EEF85B" offset="0" />
-                                    <stop stop-color="#09E5C3" offset="1" />
-                                </linearGradient>
-                                </defs>
-                                <g>
-                                <text id="text" y="100" font-family=" 'uni-heavy sans', cursive" font-size="120" font-weight="400"
-                                    stroke-width="2" stroke="url(#gradient)" fill="#232d2d" style = {{boxShadow: "inset 14px -16px 20px 20px #000"}}>NFT'S</text>
-                                </g>
-
-                            </svg>
-
-                        </div>
-                        </Col>
+                    <Col style={{textAlign: "center"}}>
+                        <img style={{width:"65%"}} src={NFTs} alt=""/>
+                    </Col>
                     </Row>
                     </Container>
             </section>
             <section>
                     <Container>
                         <Row>
-                        <div className="nft-para" style={{}}>
+                        <div className="nft-para" >
                             <p>Lords of Lands are a prestigious collection of unique Avatars #Lords, and virtual #Lands.
                             #LOL allows users to mint NFTs as avatars, gadgets, wearables, skins as well as buy a space of future real
                             estate.
@@ -54,8 +39,8 @@ const NFTComponent = () => {
                 <Row>
                     <div className="blur-box">
                     <strong>
-                        <p>Power of Digital Land </p>
-                        <p>Lords of the virtual world</p>
+                        <p style={{fontSize:"180%"}}>Power of Digital Land </p>
+                        <p style={{fontSize:"180%"}}>Lords of the virtual world</p>
                         <h3>The MetaLords to the Metalands</h3>
                     </strong>
                     </div>

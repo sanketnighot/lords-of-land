@@ -14,7 +14,7 @@ const Features = () => {
     return (
         <>
         <div>
-            <div className='dislpay-comp' style={{background: "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))", backgroundImage: 'url(' + featureback + ')', backgroundSize: "contain",backgroundRepeat: "no-repeat", height: '100%', width:"100%", backgroundPosition: "center right"}}>
+            <div className='features' style={{background: "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))", backgroundImage: 'url(' + featureback + ')', backgroundSize: "contain",backgroundRepeat: "no-repeat", height: '100%', width:"100%", backgroundPosition: "center right"}}>
                 <Feature>Features of LOL</Feature>
                 <Carouseldiv>
                     <Carousel>
@@ -75,7 +75,7 @@ const Feature = styled.h1`
 `;
 
 const Carouseldiv = styled.div`
-    width: 95%;
+    width: 85%;
     margin: auto;
 
     @media screen and (max-width:1000px) {

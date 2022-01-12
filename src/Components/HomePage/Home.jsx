@@ -3,15 +3,23 @@ import Display from './PageComponents/Display';
 import Features from './PageComponents/Features';
 import NFTComponent from './PageComponents/NFTComponent';
 import Footer from './PageComponents/Footer';
-import Test from './PageComponents/Test';
+
 const Home = () => {
     return (
         <>
         <div>
-            <Display/>
-            <Features/>
-            <NFTComponent/>
-            <Footer/>
+            <div className="navDisplay" id="navDisplay">
+                <Display/>
+            </div>
+            <div className="navFeatures" id="navFeatures">
+                <Features/>
+            </div>
+            <div className="navNFT" id="navNFT">
+                <NFTComponent/>
+            </div>
+            <div className="navFooter" id="navFooter">
+                <Footer/>
+            </div>  
             {/* <Test/> */}
         </div>
 

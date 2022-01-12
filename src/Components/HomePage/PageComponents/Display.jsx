@@ -1,5 +1,5 @@
 import React from 'react';
-import show from './images/cover.png';
+// import show from './images/cover.png';
 import hide from './images/unrevealed.png';
 import button from './images/button.png';
 import styled from 'styled-components';
@@ -10,25 +10,24 @@ import Navbar from './Navbar'
 const Display = () => {
     return (
         <div style={{backgroundColor: "black", height:"100vh", minHeight: "100vh"}}>
-        <div className='display-comp' style={{background: "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))", backgroundImage: 'url(' + hide + ')', backgroundSize: "cover",backgroundRepeat: "no-repeat", height: '100%', width:"100%", backgroundPosition: "75% 50%"}}>
+        <div className='home' style={{background: "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))", backgroundImage: 'url(' + hide + ')', backgroundSize: "cover",backgroundRepeat: "no-repeat", height: '100%', width:"100%", backgroundPosition: "75% 50%"}}>
         <Navbar/>
         <Container>
             <Row className="">
                 <Col xs={12} md={8}> 
-            <ComingSoon className='coming-soon'>
-                {/* <strong><h1 style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange"}}>COMING SOON !</h1></strong> */}
-            
-                <h2 style={{color: "#ffffff", textShadow: "2px 2px 5px black", fontSize: "100%"}}>
-                <span style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange"}}>COMING SOON !</span>
-                WORLD'S FIRST VIRTUAL LAND NFTS, GIVING ITS HOLDERS MONTHLY RENTALS IN ETHEREUM !</h2>
-                <h3 className="metaverse-div" style={{color: "#ffffff",textShadow: "2px 2px 20px lime"}}>Own Land in the <strong>ProperT Land Metaverse</strong></h3>
-                <div className="discord-btn">
-                    <DiscordBtn  onClick = {()=> {console.log("clicked")}}>
-                        <img style= {{  width: "25px", height: "17px"}} src={button} alt=""/> JOIN DISCORD
-                    </DiscordBtn>
-                </div>
-            </ComingSoon>
-        </Col>
+                    <ComingSoon className='coming-soon'>
+                        {/* <strong><h1 style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange"}}>COMING SOON !</h1></strong> */}
+                        <h2 style={{color: "#ffffff", textShadow: "2px 2px 5px black", fontSize: "220%"}}>
+                        <span style={{color: "#c4a2fa", textShadow: "2px 2px 15px orange"}}>COMING SOON ! </span>
+                        WORLD'S FIRST VIRTUAL LAND NFTS, GIVING ITS HOLDERS MONTHLY RENTALS IN ETHEREUM !</h2>
+                        <h2 className="metaverse-div" style={{color: "grey",textShadow: "2px 2px 20px black"}}>Own Land in the <strong>ProperT Land Metaverse</strong></h2>
+                        <div className="discord-btn">
+                            <DiscordBtn  onClick = {()=> {console.log("clicked")}}>
+                                <img style= {{  width: "25px", height: "17px"}} src={button} alt=""/> JOIN DISCORD
+                            </DiscordBtn>
+                        </div>
+                    </ComingSoon>
+                </Col>
             </Row>
         </Container>
         </div>
@@ -38,13 +37,13 @@ const Display = () => {
 
 const ComingSoon = styled.div`
     width: 70%;
-    margin-top: 35%;
+    margin-top: 25%;
     @media screen and (max-width:780px) {
         width: 100%;
         display: block;
         align-items: center;
         text-align: center;
-        margin-top: 50%;
+        margin-top: 30%;
         vertical-align: middle;
     }
 `;
@@ -68,6 +67,3 @@ const DiscordBtn = styled.button`
 `;
 
 export default Display;
-
-
-

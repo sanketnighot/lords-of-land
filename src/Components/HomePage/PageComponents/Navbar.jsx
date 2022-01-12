@@ -1,12 +1,27 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Container, Row, Col} from 'react-bootstrap/';
 import Logo from './images/logo-top.png';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
     function onClickMenu(){
         document.getElementById("menu").classList.toggle("icon");
         document.getElementById("nav").classList.toggle("change");
+    }
+
+    const [activeHome, setActiveHome] = useState(true)
+    const [activeFeatures, setActiveGame] = useState(false)
+    const [activeNFT, setActiveMarket] = useState(false)
+
+    const toggleClass = (e) => {
+        if (e.target.childNodes[0].data === "HOME") {
+            setActiveHome(true); setActiveGame(false); setActiveMarket(false);
+        } else if (e.target.childNodes[0].data === "GAMES") {
+            setActiveHome(false); setActiveGame(true); setActiveMarket(false);
+        } else {
+            setActiveHome(false); setActiveGame(false); setActiveMarket(true);
+        }
     }
     return (
         <>
@@ -26,11 +41,11 @@ const Navbar = () => {
                             </div>
                             <div id="nav">
                             <ul class="navul">
-                                <li class="navli"><a href="#">home</a></li>
-                                <li class="navli"><a href="#">about</a></li>
-                                <li class="navli"><a href="#">blog</a></li>
-                                <li class="navli"><a href="#">contact</a></li>
-                                <li class="navli"><a href="#">gallery</a></li>
+                                <li class="navli" id={activeHome ? 'selected' : null} onClick={toggleClass}><a href="#navDisplay">Home</a></li>
+                                <li class="navli" id={activeFeatures ? 'selected' : null} onClick={toggleClass}><a href="#navFeatures">Features</a></li>
+                                <li class="navli" id={activeNFT ? 'selected' : null} onClick={toggleClass}><a href="#navNFT">NFT</a></li>
+                                {/* <li class="navli" id={activeFooter ? 'selected' : null} onClick={toggleClass}><a href="#nftcomponent">NFT Collections</a></li> */}
+                                {/* <li class="navli"><a href="#">gallery</a></li> */}
                             </ul>
                             </div>
                         </div>
