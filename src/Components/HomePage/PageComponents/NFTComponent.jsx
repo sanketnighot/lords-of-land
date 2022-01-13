@@ -142,8 +142,7 @@ const Reveal = styled.button`
 
 const NFTDiv = styled.div`
 align-items: center;
-margin-top: 4%;
-height: 40%;
+margin-top: 20%;
 @media screen and (max-width:763px) {
     margin-top:85%;
 }
@@ -152,10 +151,11 @@ height: 40%;
     padding-top: 40%;
 }
 
-@media screen and (max-width: 300px) {
-    padding-top: 95%;
+@media screen and (max-width: 375px) {
+    padding-top: 100%;
     margin-top: 100%;
 }
+
 
 `;
 

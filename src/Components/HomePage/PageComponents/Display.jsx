@@ -46,6 +46,10 @@ const ComingSoon = styled.div`
         margin-top: 30%;
         vertical-align: middle;
     }
+
+    @media (max-width: 300px) {
+        font-size: 70%;
+    }
 `;
 const DiscordBtn = styled.button`
     ${'' /* width: 65%; */}
