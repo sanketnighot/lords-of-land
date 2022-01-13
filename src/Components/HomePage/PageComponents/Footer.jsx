@@ -12,7 +12,7 @@ const Footer = () => {
             <Container style={{marginTop:"1%", textAlign:"center"}} > 
                 <Row className="justify-content-lg-center">
                     <Col xs lg="8">
-                        <img style={{width:"50%"}} src={Logo} alt="" />
+                        <Image src={Logo} alt="" />
                     </Col>
                 </Row>
                 <Row className="justify-content-lg-center">
@@ -39,4 +39,16 @@ const Text = styled.h1`
     -webkit-text-fill-color: transparent;
     font-weight: 900;
     justify-content: center;
+    
+    @media screen and (max-width: 751px) {
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+`;
+
+const Image = styled.img`
+width: 50%;
+    @media screen and (max-width: 751px) {
+        width: 60%;
+    }
 `;

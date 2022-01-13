@@ -15,7 +15,7 @@ const NFTComponent = () => {
                     <Container>
                     <Row className="justify-content-center">
                     <Col style={{textAlign: "center"}}>
-                        <img style={{width:"65%"}} src={NFTs} alt=""/>
+                        <img style={{width:"60%"}} src={NFTs} alt=""/>
                     </Col>
                     </Row>
                     </Container>
@@ -23,14 +23,14 @@ const NFTComponent = () => {
             <section>
                     <Container>
                         <Row>
-                        <div className="nft-para" >
+                        <Para className="nft-para" >
                             <p>Lords of Lands are a prestigious collection of unique Avatars #Lords, and virtual #Lands.
                             #LOL allows users to mint NFTs as avatars, gadgets, wearables, skins as well as buy a space of future real
                             estate.
                             Enter the metaverse of Online Real Estate Development
                             Unlock your Virtual Abundance : Avatar, Digilands, Communities & more...
                             </p>
-                        </div>
+                        </Para>
                         </Row>
                     </Container>
             </section>
@@ -152,4 +152,15 @@ height: 40%;
     padding-top: 40%;
 }
 
-`
+@media screen and (max-width: 300px) {
+    padding-top: 95%;
+    margin-top: 100%;
+}
+
+`;
+
+const Para = styled.div`
+@media screen and (max-width: 763px) {
+    margin-top: 10%;
+}
+`;

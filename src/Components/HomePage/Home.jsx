@@ -19,8 +19,7 @@ const Home = () => {
             </div>
             <div className="navFooter" id="navFooter">
                 <Footer/>
-            </div>  
-            {/* <Test/> */}
+            </div>
         </div>
 
         </>
