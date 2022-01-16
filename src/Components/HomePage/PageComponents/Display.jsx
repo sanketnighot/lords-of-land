@@ -16,9 +16,8 @@ const Display = () => {
             <Row className="">
                 <Col xs={12} md={8}> 
                     <ComingSoon className='coming-soon'>
-                        {/* <strong><h1 style={{color: "#5c3dc5", textShadow: "2px 2px 15px orange"}}>COMING SOON !</h1></strong> */}
                         <h2 style={{color: "#ffffff", textShadow: "2px 2px 5px black", fontSize: "220%"}}>
-                        <span style={{color: "#c4a2fa", textShadow: "2px 2px 41px black", fontSize: "110%"}}>COMING SOON ! </span>
+                        <span style={{color: "#BE7DFF", textShadow: "2px 2px 10px black", fontSize: "120%", fontWeight: 700}}>COMING SOON ! </span>
                         WORLD'S FIRST VIRTUAL LAND NFTS, GIVING ITS HOLDERS MONTHLY RENTALS IN ETHEREUM !</h2>
                         <h2 className="metaverse-div" style={{color: "grey", fontSize:"150%"}}>Own Land in the <strong>ProperT Land Metaverse</strong></h2>
                         <div className="discord-btn">

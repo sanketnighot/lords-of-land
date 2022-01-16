@@ -17,7 +17,7 @@ const Roadmap = () => {
                     
                 <Container className="roadmapclass">
                     <Row >
-                        <Col style={{height: "40%", width:"40%"}}>
+                        <Col style={{width:"40%"}}>
                             {/* <RoadmapPt1/> */}
                             {/* <img src={RoadmapPt2} alt=""style={{height: "70%", width:"70%", marginLeft:"15%"}}/> */}
                             <Desktop>

@@ -6,7 +6,7 @@ import {Container, Row, Col, Card, CardGroup} from 'react-bootstrap/';
 import JoinDiscord from './images/JoinDiscord.png';
 import styled from 'styled-components';
 // import './style.css';
-import NFTs from './images/NFTs.png'
+import NFTs from './images/NFT.png'
 const NFTComponent = () => {
     return (
         <>
@@ -17,6 +17,7 @@ const NFTComponent = () => {
                     <Col style={{textAlign: "center"}}>
                         <img style={{width:"60%"}} src={NFTs} alt=""/>
                     </Col>
+     
                     </Row>
                     </Container>
             </section>
@@ -160,6 +161,7 @@ margin-top: 20%;
 `;
 
 const Para = styled.div`
+margin-top: 2%;
 @media screen and (max-width: 763px) {
     margin-top: 10%;
 }
