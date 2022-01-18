@@ -80,7 +80,7 @@ const Features = () => {
                         </Carousel>
                     </Carouseldiv>
                 </Mobile>
-                <Parallax style={{transform: `translateY(${offsetY * 0.25}px)`}}></Parallax>
+                <Parallax style={{transform: `translateY(${offsetY * -0.25}px)`}}></Parallax>
             <Feature><strong>Featured in</strong></Feature>
                 <div>
                     <Featured/>
