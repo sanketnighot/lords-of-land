@@ -16,7 +16,7 @@ import Featured from './Featured';
 import Roadmap from './Roadmap'
 const Features = () => {
     const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset)
+    const handleScroll = () => setOffsetY(((window.pageYOffset)))
     useEffect(() =>{
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
@@ -28,7 +28,6 @@ const Features = () => {
         <div>
             <div className='features' style={{background: "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))", backgroundImage: 'url(' + featureback + ')', backgroundSize: "contain",backgroundRepeat: "no-repeat", height: '100%', width:"100%", backgroundPosition: "center right"}}>
                 <Feature>Features of LOL</Feature>
-
                 <Desktop>
                     <Carouseldiv>
                         <Carousel>
@@ -54,6 +53,7 @@ const Features = () => {
                         </Carousel>
                     </Carouseldiv>
                 </Desktop>
+                <Parallax style={{transform: `translateY(${offsetY * 0.6}px)`}}></Parallax>
 
                 <Mobile>
                     <Carouseldiv>
@@ -80,7 +80,7 @@ const Features = () => {
                         </Carousel>
                     </Carouseldiv>
                 </Mobile>
-                <Parallax style={{transform: `translateY(${offsetY * -0.25}px)`}}></Parallax>
+                
             <Feature><strong>Featured in</strong></Feature>
                 <div>
                     <Featured/>
@@ -148,7 +148,7 @@ const Parallax = styled.div`
     background-size: 95%;
     background-color: transparent;
     z-index: 1;
-    margin-top: -40%;
+    margin-top: -35%;
     
     @media screen and (max-width:900px) {
         height:400px;
