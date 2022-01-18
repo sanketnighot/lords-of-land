@@ -82,7 +82,7 @@ const Features = () => {
                 </Mobile>
                 <Parallax style={{transform: `translateY(${offsetY * 0.25}px)`}}></Parallax>
             <Feature><strong>Featured in</strong></Feature>
-                <div style={{}}>
+                <div>
                     <Featured/>
                 </div>
                 <div>
