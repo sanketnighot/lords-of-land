@@ -18,7 +18,7 @@ const RoadmapResponsive = () => {
                         
                     </Col>
                     <Col md="auto">
-                        <h1>1. NFT Lords and Land Presale</h1>
+                        <h1 style={{fontSize:"120%"}}>1. NFT Lords and Land Presale</h1>
                         <p style={{fontSize:"110%", color:"white"}}>Unveiling the fresh look of 500 Lords & 500 Lands</p>
                         <br/> </Col>
                     
@@ -29,7 +29,7 @@ const RoadmapResponsive = () => {
                         
                     </Col>
                     <Col md="auto">
-                        <h1>2. NFT Full-Stack Sale</h1>
+                        <h1 style={{fontSize:"120%"}}>2. NFT Full-Stack Sale</h1>
                         <p style={{fontSize:"110%", color:"white"}}>Full Stake sale of 2000+ Lords, 2500+ Lands, Mobility, Cloths and Accessories and gadgets</p>
                     </Col>
                         <br/>    
@@ -40,7 +40,7 @@ const RoadmapResponsive = () => {
                         
                     </Col>
                     <Col md="auto">
-                        <h1>3. Rent Distribution</h1>
+                        <h1 style={{fontSize:"120%"}}>3. Rent Distribution</h1>
                         <p style={{fontSize:"110%", color:"white"}}>First monthly rental distribution amongst all Land Lords</p>
                     </Col>
                         <br/>    
@@ -51,7 +51,7 @@ const RoadmapResponsive = () => {
                         
                     </Col>
                     <Col md="auto">
-                        <h1>4. Import</h1>
+                        <h1 style={{fontSize:"120%"}}>4. Import</h1>
                         <p style={{fontSize:"110%", color:"white"}}>Import all NFT’s in ProperT Land Metaverse, where Lords & their Lands will Rule</p>
                     </Col>
                         <br/>    
@@ -62,7 +62,7 @@ const RoadmapResponsive = () => {
                         
                     </Col>
                     <Col md="auto">
-                        <h1>5. Special Powers</h1>
+                        <h1 style={{fontSize:"120%"}}>5. Special Powers</h1>
                         <p style={{fontSize:"110%", color:"white"}}>Special Powers to Lords and Features to Lands</p>
                     </Col>
                         <br/>    
@@ -73,7 +73,7 @@ const RoadmapResponsive = () => {
                         
                     </Col>
                     <Col md="auto">
-                        <h1>6. Defi Launch</h1>
+                        <h1 style={{fontSize:"120%"}}>6. Defi Launch</h1>
                         <p style={{fontSize:"110%", color:"white"}}>Where our landlords will be rewarded with something big</p>
                     </Col>
                         <br/>    

@@ -35,19 +35,19 @@ const NFTComponent = () => {
                         </Row>
                     </Container>
             </section>
-            <section className="hut" >
+            <Hut className="hut" >
                 <Container style={{width:"50%", minWidth:"90%"}}>
                 <Row>
-                    <div className="blur-box">
+                    <BlurBox className="blur-box">
                     <strong>
                         <p style={{fontSize:"180%"}}>Power of Digital Land </p>
                         <p style={{fontSize:"180%"}}>Lords of the virtual world</p>
                         <h3>The MetaLords to the Metalands</h3>
                     </strong>
-                    </div>
+                    </BlurBox>
                 </Row>
                 </Container>
-            </section></NFTDiv>
+            </Hut></NFTDiv>
             <section className="meta">
                 <Container>
                 <Row>
@@ -145,24 +145,41 @@ const NFTDiv = styled.div`
 align-items: center;
 margin-top: 20%;
 @media screen and (max-width:763px) {
-    margin-top:85%;
-}
+    margin-top:55%;
+    padding-top: 30%;
 
-@media screen and (max-width: 763px) {
-    padding-top: 40%;
 }
 
 @media screen and (max-width: 375px) {
-    padding-top: 100%;
-    margin-top: 100%;
+    padding-top: 110%;
+    margin-top: 110%;
 }
 
 
 `;
 
 const Para = styled.div`
-margin-top: 2%;
+margin-top: 12%;
 @media screen and (max-width: 763px) {
-    margin-top: 10%;
+    margin-top: 20%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 1%;
+}
+`;
+
+const BlurBox = styled.div`
+
+
+@media screen and (max-width: 763px) {
+    width: 100%;
+    font-size: 80%;
+}
+
+`;
+
+const Hut = styled.section`
+@media screen and (max-width: 763px) {
+    background-size: contain;
 }
 `;

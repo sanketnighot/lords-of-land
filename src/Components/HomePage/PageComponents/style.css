@@ -865,7 +865,7 @@ svg:not(:root) {
   background-size: cover;
   align-self: right;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 70vh;
   background-position: 75% 50%
 }
 .blur-box {
@@ -1010,7 +1010,7 @@ svg:not(:root) {
   width: 100%;
 }
 .metaverse {
-  margin: 75px auto;
+  margin: auto;
   width: 90%;
 }
 .meta {

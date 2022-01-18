@@ -3,11 +3,12 @@ import Display from './PageComponents/Display';
 import Features from './PageComponents/Features';
 import NFTComponent from './PageComponents/NFTComponent';
 import Footer from './PageComponents/Footer';
-
+import NavBar from './PageComponents/NavBar';
 const Home = () => {
     return (
         <>
         <div>
+            <NavBar/>
             <div className="navDisplay" id="navDisplay">
                 <Display/>
             </div>
