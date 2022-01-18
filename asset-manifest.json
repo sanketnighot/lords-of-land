@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lords-of-land/static/css/main.094dd998.css",
-    "main.js": "/lords-of-land/static/js/main.9f9f2ef3.js",
+    "main.js": "/lords-of-land/static/js/main.69969e8b.js",
     "static/js/787.98e414df.chunk.js": "/lords-of-land/static/js/787.98e414df.chunk.js",
     "static/media/ezgif.com-gif-maker.gif": "/lords-of-land/static/media/ezgif.com-gif-maker.b46ad3a2876ec1b0593e.gif",
     "static/media/cover.png": "/lords-of-land/static/media/cover.4b526adf1606e5da8e94.png",
@@ -39,11 +39,11 @@
     "static/media/six.png": "/lords-of-land/static/media/six.a404c49a838d5a74911e.png",
     "index.html": "/lords-of-land/index.html",
     "main.094dd998.css.map": "/lords-of-land/static/css/main.094dd998.css.map",
-    "main.9f9f2ef3.js.map": "/lords-of-land/static/js/main.9f9f2ef3.js.map",
+    "main.69969e8b.js.map": "/lords-of-land/static/js/main.69969e8b.js.map",
     "787.98e414df.chunk.js.map": "/lords-of-land/static/js/787.98e414df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.094dd998.css",
-    "static/js/main.9f9f2ef3.js"
+    "static/js/main.69969e8b.js"
   ]
 }
