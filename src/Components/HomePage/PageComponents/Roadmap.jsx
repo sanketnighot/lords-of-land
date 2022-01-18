@@ -56,7 +56,7 @@ const Text = styled.h1`
     }
 `
 
-const Desktop = styled.div`
+const Desktop = styled.div` 
 @media screen and (max-width:763px) {
     display: none;
 }
