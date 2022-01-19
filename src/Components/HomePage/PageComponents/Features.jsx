@@ -53,7 +53,7 @@ const Features = () => {
                         </Carousel>
                     </Carouseldiv>
                 </Desktop>
-                <Parallax style={{transform: `translateY(${offsetY * 0.6}px)`}}></Parallax>
+                <Parallax style={{transform: `translateY(${offsetY * 0.3}px)`}}></Parallax>
 
                 <Mobile>
                     <Carouseldiv>
@@ -81,10 +81,10 @@ const Features = () => {
                     </Carouseldiv>
                 </Mobile>
                 
-            <Feature><strong>Featured in</strong></Feature>
+            {/* <Feature><strong>Featured in</strong></Feature>
                 <div>
                     <Featured/>
-                </div>
+                </div> */}
                 <div>
                     <Roadmap/>
                 </div>
@@ -134,6 +134,12 @@ const Desktop = styled.div`
 const Mobile = styled.div`
 @media screen and (min-width: 763px){
     display: none;
+    font-family: uni-heavy Sans;
+    color: #fff;
+    background: -webkit-linear-gradient(#fff, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 `
