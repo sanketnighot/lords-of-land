@@ -12,6 +12,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "serve": "^13.0.2",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.2"
   },
@@ -44,7 +45,7 @@
   "resolutions": {
     "styled-components": "^5"
   },
-  "homepage": "http://sanketnighot.github.io/lords-of-land",
+  "homepage": "http://www.lordsofthelands.io/",
   "devDependencies": {
     "gh-pages": "^3.2.3"
   }
