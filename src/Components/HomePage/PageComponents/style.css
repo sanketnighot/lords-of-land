@@ -23,9 +23,9 @@ body {
   background-color: #080e18 !important;
 }
 header {
-  background: linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3)),
-    url("./images/cover.png");
-  box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url("./images/unrevealed.png");
 }
 .coming {
   font-size: 33px;
@@ -404,13 +404,13 @@ h3 {
 #player {
   position: absolute;
   margin: 0px;
-  top: -19px;
-  right: -261px;
+  top: -16px;
+  right: -361px;
 }
 
 #inner {
   transform: rotate(41deg);
-  background-color: #081b2c;
+  background-color: #162635;
   width: 95px;
   height: 131px;
   top: 21px;
@@ -425,90 +425,96 @@ h3 {
 .main-info .tri-info li::after {
   width: 30px;
   height: 30px;
-  padding: 4px 4px;
+  padding: 0px 4px;
   font-size: 12px;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   background: transparent;
   content: "01";
   color: #fff;
   position: absolute;
-  left: 168px;
-  top: -18px;
+  left: 279px;
+  font-size: 16px;
+  top: -13px;
   border-radius: 50%;
   z-index: 9999999;
 }
 .main-info-2 .tri-info li::after {
   width: 30px;
   height: 30px;
-  padding: 4px 4px;
+  padding: 0px 4px;
   font-size: 12px;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   background: transparent;
   content: "02";
   color: #fff;
   position: absolute;
-  left: 168px;
-  top: -18px;
+  left: 279px;
+  font-size: 16px;
+  top: -13px;
   border-radius: 50%;
   z-index: 9999999;
 }
 .main-info-3 .tri-info li::after {
   width: 30px;
   height: 30px;
-  padding: 4px 4px;
+  padding: 0px 4px;
   font-size: 12px;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   background: transparent;
   content: "03";
   color: #fff;
   position: absolute;
-  left: 168px;
-  top: -18px;
+  left: 279px;
+  font-size: 16px;
+  top: -13px;
   border-radius: 50%;
   z-index: 9999999;
 }
 .main-info-4 .tri-info li::after {
   width: 30px;
   height: 30px;
-  padding: 4px 4px;
+  padding: 0px 4px;
   font-size: 12px;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   background: transparent;
   content: "04";
   color: #fff;
   position: absolute;
-  left: 168px;
-  top: -18px;
+  left: 279px;
+  font-size: 16px;
+  top: -13px;
   border-radius: 50%;
   z-index: 9999999;
 }
 .main-info-5 .tri-info li::after {
   width: 30px;
   height: 30px;
-  padding: 4px 4px;
+  padding: 0px 4px;
   font-size: 12px;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   background: transparent;
   content: "05";
   color: #fff;
   position: absolute;
-  left: 168px;
-  top: -18px;
+  left: 279px;
+  font-size: 16px;
+  top: -13px;
   border-radius: 50%;
   z-index: 9999999;
 }
 .main-info-6 .tri-info li::after {
   width: 30px;
   height: 30px;
-  padding: 4px 4px;
+  padding: 0px 4px;
   font-size: 12px;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   background: transparent;
   content: "06";
   color: #fff;
   position: absolute;
-  left: 168px;
-  top: -18px;
+  left: 279px;
+  font-size: 16px;
+  top: -13px;
   border-radius: 50%;
   z-index: 9999999;
 }
@@ -518,17 +524,17 @@ h3 {
 .main-info {
   position: absolute;
   top: 1.5%;
-  left: 14%;
+  left: 7%;
 }
 .main-info-2 {
-  left: 14%;
+  left: 7%;
   position: absolute;
   top: 31%;
 }
 .main-info-3 {
   top: 60%;
   position: absolute;
-  left: 14%;
+  left: 7%;
 }
 .main-info-4 {
   top: 2%;
@@ -553,26 +559,29 @@ h3 {
 
 /* road map traingle css end here */
 .text {
+  left: 137px;
   position: absolute;
-  height: 112px;
-  background: #081b2c;
+  height: 116px;
+  background: #162635;
   text-align: center;
   padding: 2px 5px;
-  width: 204px;
+  width: 300px;
   right: -203px;
   margin: 0px;
 }
 .text h5 {
+  padding-left: 30px;
   text-align: left;
-  padding-top: 7px;
+  padding-top: 14px;
   color: #fff !important;
-  font-size: 17px;
+  font-size: 19px;
   font-family: "Poppins", sans-serif !important;
   margin: 0px;
 }
 .roadmap {
   position: relative;
-  height: 80vh;
+  height: 100vh;
+  padding: 40px 0px;
 }
 .tri-info {
   display: flex;
@@ -580,26 +589,31 @@ h3 {
   justify-content: center;
 }
 .img-icon img {
-  width: 100px;
-  transform: rotate(-257deg);
-  width: 100px;
+  transform: rotate(-271deg);
+  width: 95px;
+  margin: 15px;
   padding-top: 27px;
-  padding-right: 22px;
+  padding-right: 34px;
 }
 .main-info-2 .tri-info .img-icon img {
   transform: rotate(89deg);
-  width: 123px;
-  padding-right: 46px;
+  width: 94px;
+  margin-left: 21px;
+  margin-top: 20px;
+  padding-right: 64px;
+  margin-right: 76px;
 }
 .main-info-3 .tri-info .img-icon img {
   transform: rotate(89deg);
-  width: 63px;
+  width: 86px;
   padding: 0px -3px;
-  padding-bottom: 34px;
+  padding-bottom: 11px;
 }
 .main-info-4 .tri-info .img-icon img {
-  transform: rotate(89deg);
-  width: 54px;
+  transform: rotate(62deg);
+  width: 87px;
+  margin-top: -4px;
+  margin-left: 3px;
   padding: 0px -3px;
   padding-right: 29px;
   padding-bottom: 48px;
@@ -701,7 +715,7 @@ h3 {
   width: 250px;
   position: absolute;
   height: 250px;
-  background-color: #081b2c;
+  background-color: #162635;
   border-radius: 50%;
   box-shadow: 8px 1px 17px -2px #080f18;
 }
@@ -712,24 +726,27 @@ h3 {
   left: -7px;
 }
 .s-cir {
-  width: 113px;
+  width: 117px;
   transform: rotate(-89deg);
   height: 113px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
-  border: 10px solid #081b2c;
+  border: 10px solid #162635;
   border-bottom: 0;
   box-sizing: border-box;
   position: relative;
-  background: #081b2c;
+  background: #162635;
 }
 .text p {
+  padding-left: 30px;
   letter-spacing: 0.5px !important;
   font-family: "Poppins", sans-serif;
   padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 44px;
   color: #fff;
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
 }
 .img-icon {
   width: 90px;
@@ -763,12 +780,13 @@ svg:not(:root) {
   padding: 10px 90px;
 }
 .nft-para p {
+  font-weight: 800;
   text-transform: lowercase;
   letter-spacing: 0.5px;
   margin-top: -36px;
   color: #ffffffd9;
-  line-height: 45px;
-  font-size: 16px;
+  line-height: 55px;
+  font-size: 18px;
   background: -webkit-linear-gradient(#2afff0, #7eff66);
   -webkit-background-clip: text;
   background-clip: text;
@@ -784,12 +802,12 @@ svg:not(:root) {
   height: 70vh;
 }
 .blur-box {
-  width: 565px;
+  width: 600px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
-  padding: 10px 20px;
-  border: 2px solid #b2ec70;
+  padding: 34px 13px;
+  border: 4px solid #41f990fa;
   box-shadow: inset 0 7em 47em #2afff14b;
   border-radius: 20px;
 }
@@ -965,15 +983,14 @@ svg:not(:root) {
   background: -webkit-linear-gradient(#2afff0, #46f028);
 }
 /* react css added    by suraj */
-.DiscordBtn {
-}
 .roadmap h1,
 .features h1 {
   text-align: center;
   margin-bottom: 60px;
+  font-weight: 700;
 }
 .nft {
-  margin-top: 70px;
+  margin-top: 153px;
   margin-bottom: 40px;
 }
 .wlogo img {
@@ -981,15 +998,47 @@ svg:not(:root) {
   width: 20%;
 }
 .w-100 {
-  width: 83% !important;
-  margin: 0 auto!important;
+  padding-bottom: 1px;
+  border-radius: 25px;
+  width: 100% !important;
+  height: 100%;
 }
-.carousel-control-next-icon,.carousel-control-prev-icon{
+.carousel {
+  margin: 2px auto;
+  width: 701px;
+  background: linear-gradient(45deg, #3cffd3, #64ff8f);
+  height: 354px;
+  position: relative;
+  border-radius: 25px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   background: none;
 }
-.carousel-indicator{
-display: inline-block;
-position: absolute;
-  top: 10px;
+.carousel-indicators {
+  bottom: -50px;
+}
+.carousel-indicators [data-bs-target] {
+  height: 6px;
+  margin: 5px 7px;
+  display: block;
+  transition: opacity 200ms ease;
+  background: -webkit-linear-gradient(#2afff0, #46f028);
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0px -2px 2px 1px #2afff0;
+  border: none;
+  border-radius: 5px;
+}
+.carousel-inner {
+  margin-bottom: 50px;
+}
+.logo1 img {
+  padding: 50px 0px;
+  width: 10%;
+  margin-left: 40vw;
+}
+#navNFT {
+  margin-top: 112px;
+  padding: 70px 0px;
 }
 /* react css ended    by suraj */

@@ -115,6 +115,7 @@ const NavBar = () => {
             background: "rgba(255, 255, 255, 0.2)",
             backdropFilter: "blur(10px)",
             height: "12%",
+            boxShadow: "#000000 123px 209px 347px 95px inset",
             textAlign: "center",
           }}
           expand={false}
@@ -151,9 +152,6 @@ const Desktop = styled.div`
 const Mobile = styled.div`
   @media screen and (min-width: 763px) {
     display: none;
-    background: linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3)),
-      url("./images/cover.png");
-    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 15px;
   }
 `;
 

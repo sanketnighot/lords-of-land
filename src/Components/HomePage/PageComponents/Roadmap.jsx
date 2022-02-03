@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style.css";
+import whitelogo from "./images/Whitelogo.png"
 import "./responsiveStyle.css";
 import RoadmapPt1 from "./RoadmapPt1"
 import LOLRoadmap from "./images/LOL-Roadmap.png";
@@ -13,9 +14,16 @@ const Roadmap = () => {
     <>
       <div className="roadmap">
         <div>
+           
           <h1>Roadmap</h1>
+
           <Container className="roadmapclass">
             <Row>
+            <div className="logo1">
+                <img src={whitelogo} alt="" style={{
+                   
+                }}/>
+            </div>
               <Col style={{ width: "40%" }}>
                 {/* <RoadmapPt1/> */}
                 {/* <img src={RoadmapPt2} alt=""style={{height: "70%", width:"70%", marginLeft:"15%"}}/> */}

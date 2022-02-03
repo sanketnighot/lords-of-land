@@ -10,11 +10,12 @@ import Navbar from "./NavBar";
 const Display = () => {
   return (
     <div
-      style={{ backgroundColor: "black", height: "100vh", minHeight: "100vh" }}
+      style={{ backgroundColor: "black", height: "110vh", minHeight: "100vh" }}
     >
       <div
         className="home"
         style={{
+            boxShadow: "#000000 123px 209px 347px 95px inset",
           background:
             "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))",
           backgroundImage: "url(" + hide + ")",
@@ -33,7 +34,7 @@ const Display = () => {
                   style={{
                     color: "#ffffff",
                     textShadow: "2px 2px 5px black",
-                    fontSize: "220%",
+                    fontSize: "190%",
                   }}
                 >
                   <span
@@ -101,7 +102,7 @@ const DiscordBtn = styled.button`
   vertical-align: middle;
   display: initial;
   text-transform: uppercase;
-  padding: 5%;
+  padding: 5px 15px;;
   font-size: 16px;
   font-weight: bold;
   color: #fff;
