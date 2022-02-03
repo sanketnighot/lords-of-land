@@ -1,63 +1,76 @@
-import React from 'react'
+import React from "react";
 // import Lords1 from './images/Lords01.png';
 // import Lords2 from './images//Lords02.png';
 // import Lords3 from './images//Lords03.png';
-import {Container, Row, Col, Card, CardGroup} from 'react-bootstrap/';
-import JoinDiscord from './images/JoinDiscord.png';
-import styled from 'styled-components';
+import { Container, Row, Col, Card, CardGroup } from "react-bootstrap/";
+import JoinDiscord from "./images/JoinDiscord.png";
+import styled from "styled-components";
 // import './style.css';
-import NFTs from './images/NFT.png'
+import NFTs from "./images/NFT.png";
 const NFTComponent = () => {
-    return (
-        <>
-            <NFTDiv className="nftcomponent">
-            <section className="nft">
-                    <Container>
-                    <Row className="justify-content-center">
-                    <Col style={{textAlign: "center"}}>
-                        <img style={{width:"60%"}} src={NFTs} alt=""/>
-                    </Col>
-     
-                    </Row>
-                    </Container>
-            </section>
-            <section>
-                    <Container>
-                        <Row>
-                        <Para className="nft-para" >
-                            <p>Lords of Lands are a prestigious collection of unique Avatars #Lords, and virtual #Lands.
-                            #LOL allows users to mint NFTs as avatars, gadgets, wearables, skins as well as buy a space of future real
-                            estate.
-                            Enter the metaverse of Online Real Estate Development
-                            Unlock your Virtual Abundance : Avatar, Digilands, Communities & more...
-                            </p>
-                        </Para>
-                        </Row>
-                    </Container>
-            </section>
-            <Hut className="hut" >
-                <Container style={{width:"50%", minWidth:"90%"}}>
-                <Row>
-                    <BlurBox className="blur-box">
-                    <strong>
-                        <p style={{fontSize:"180%"}}>Power of Digital Land </p>
-                        <p style={{fontSize:"180%"}}>Lords of the virtual world</p>
-                        <h3>The MetaLords to the Metalands</h3>
-                    </strong>
-                    </BlurBox>
-                </Row>
-                </Container>
-            </Hut></NFTDiv>
-            <section className="meta">
-                <Container>
-                <Row>
-                    <div className="metaverse">
-                    <img src={JoinDiscord} alt=""/>
-                    </div>
-                </Row>
-                </Container>
-            </section>
-            {/* <section className="teams">
+  return (
+    <>
+      <NFTDiv className="nftcomponent">
+        <section className="nft">
+          <Container>
+            <Row className="justify-content-center">
+              <Col style={{ textAlign: "center" }}>
+                <h1
+                  style={{
+                    textAlign: "center",
+                    fontSize: "52px",
+                    fontWeight: " 700",
+                    lineHeight: "78px",
+                  }}
+                >
+                  NFT’s
+                </h1>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section>
+          <Container>
+            <Row>
+              <Para className="nft-para">
+                <p>
+                  Lords of Lands are a prestigious collection of unique Avatars
+                  #Lords, and virtual #Lands.</p><p>#LOL allows users to mint NFTs as
+                  avatars, gadgets, wearables, skins as well as buy a space of
+                  future real estate.</p> <p>Enter the metaverse of Online Real Estate
+                  Development</p> <p>Unlock your Virtual Abundance : Avatar, Digilands,
+                  Communities & more...
+                </p>
+              </Para>
+            </Row>
+          </Container>
+        </section>
+        <Hut className="">
+          <Container style={{ width: "50%", minWidth: "90%" }}>
+            <Row>
+              <BlurBox className="blur-box">
+                <strong>
+                  <p style={{ fontSize: "100%" }}>Power of Digital Land </p>
+                  <p style={{ fontSize: "100%" }}>Lords of the virtual world</p>
+                  <h3>The MetaLords to the Metalands</h3>
+                </strong>
+              </BlurBox>
+            </Row>
+          </Container>
+        </Hut>
+      </NFTDiv>
+      <div className="hut">
+      </div>
+      <section className="meta">
+        <Container>
+          <Row>
+            <div className="metaverse">
+              <img src={JoinDiscord} alt="" />
+            </div>
+          </Row>
+        </Container>
+      </section>
+      {/* <section className="teams">
                     <div className="play-team">
                     <Text>Lords</Text>
                         <ul className="player">
@@ -104,82 +117,74 @@ const NFTComponent = () => {
                     
                     </div>
             </section> */}
-        </>
-    )
-}
+    </>
+  );
+};
 
-export default NFTComponent
+export default NFTComponent;
 
 const Text = styled.h1`
-    color: #5c3dc5;
-    font-size: 350%;
-    text-align: center;
-    margin: 2%;
-    font-family: uni-regular sans;
-    background: -webkit-linear-gradient(#2afff0, #66ffeb);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    text-shadow: 2px 2px 5px #12be29b7;
+  color: #5c3dc5;
+  font-size: 350%;
+  text-align: center;
+  margin: 2%;
+  font-family: uni-regular sans;
+  background: -webkit-linear-gradient(#2afff0, #66ffeb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px #12be29b7;
 `;
 
 const Reveal = styled.button`
-    width: 165px;
-    height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 25%;
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    border: none;
-    background: linear-gradient(#2afff0, #7eff66);
-    border-radius: 25px !important;
-    cursor: pointer;
-    text-shadow: 2px 2px 8px black
+  width: 165px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 25%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  border: none;
+  background: linear-gradient(#2afff0, #7eff66);
+  border-radius: 25px !important;
+  cursor: pointer;
+  text-shadow: 2px 2px 8px black;
 `;
 
-
 const NFTDiv = styled.div`
-align-items: center;
-margin-top: 20%;
-@media screen and (max-width:763px) {
-    margin-top:55%;
+  align-items: center;
+
+  @media screen and (max-width: 763px) {
+    margin-top: 55%;
     padding-top: 30%;
+  }
 
-}
-
-@media screen and (max-width: 375px) {
+  @media screen and (max-width: 375px) {
     padding-top: 110%;
     margin-top: 110%;
-}
-
-
+  }
 `;
 
 const Para = styled.div`
-margin-top: 12%;
-@media screen and (max-width: 763px) {
+  @media screen and (max-width: 763px) {
     margin-top: 20%;
     margin-left: 0%;
     margin-right: 0%;
     padding: 1%;
-}
+  }
 `;
 
 const BlurBox = styled.div`
-
-
-@media screen and (max-width: 763px) {
+  @media screen and (max-width: 763px) {
     width: 100%;
     font-size: 80%;
-}
-
+  }
 `;
 
 const Hut = styled.section`
-@media screen and (max-width: 763px) {
+  @media screen and (max-width: 763px) {
     background-size: contain;
-}
+  }
 `;

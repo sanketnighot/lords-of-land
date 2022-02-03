@@ -1,119 +1,172 @@
-import React, {useState} from 'react'
-import {Container, Row, Col} from 'react-bootstrap/';
-import Logo from './images/logo-top.png';
+import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap/";
+import Logo from "./images/logo-top.png";
 import { Link } from "react-router-dom";
-import styled from 'styled-components';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-
+import styled from "styled-components";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 const NavBar = () => {
+  function onClickMenu() {
+    document.getElementById("menu").classList.toggle("icon");
+    document.getElementById("nav").classList.toggle("change");
+  }
 
-    function onClickMenu(){
-        document.getElementById("menu").classList.toggle("icon");
-        document.getElementById("nav").classList.toggle("change");
+  const [activeHome, setActiveHome] = useState(true);
+  const [activeFeatures, setActiveGame] = useState(false);
+  const [activeNFT, setActiveMarket] = useState(false);
+
+  const toggleClass = (e) => {
+    if (e.target.childNodes[0].data === "HOME") {
+      setActiveHome(true);
+      setActiveGame(false);
+      setActiveMarket(false);
+      onClickMenu();
+    } else if (e.target.childNodes[0].data === "GAMES") {
+      setActiveHome(false);
+      setActiveGame(true);
+      setActiveMarket(false);
+      onClickMenu();
+    } else {
+      setActiveHome(false);
+      setActiveGame(false);
+      setActiveMarket(true);
+      onClickMenu();
     }
+  };
+  return (
+    <>
+      <Desktop>
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 col-sm-6 col-xs-2">
+                <div id="navigation">
+                  <div class="logo-top">
+                    <img src={Logo} alt="" />
+                  </div>
+                  <div
+                    id="menu"
+                    onClick={() => {
+                      onClickMenu();
+                    }}
+                  >
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                  </div>
+                  <div id="nav">
+                    <ul class="navul">
+                      <li
+                        class="navli"
+                        id={activeHome ? "selected" : null}
+                        onClick={toggleClass}
+                      >
+                        <a href="#navDisplay">Home</a>
+                      </li>
+                      <li
+                        class="navli"
+                        id={activeFeatures ? "selected" : null}
+                        onClick={toggleClass}
+                      >
+                        <a href="#navFeatures">Features</a>
+                      </li>
+                      <li
+                        class="navli"
+                        id={activeNFT ? "selected" : null}
+                        onClick={toggleClass}
+                      >
+                        <a href="#navNFT">NFT</a>
+                      </li>
+                      {/* <li class="navli" id={activeFooter ? 'selected' : null} onClick={toggleClass}><a href="#nftcomponent">NFT Collections</a></li> */}
+                      {/* <li class="navli"><a href="#">gallery</a></li> */}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-md-6 col-lg-6 col-sm-6 col-xs-2">
+                <div class="social">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <a href="#" className="btn-s">
+                   open sea
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </Desktop>
+      <Mobile>
+        <Navbar
+          style={{
+            background: "rgba(255, 255, 255, 0.2)",
+            backdropFilter: "blur(10px)",
+            height: "12%",
+            textAlign: "center",
+          }}
+          expand={false}
+          fixed="top"
+        >
+          <Container fluid>
+            <Navbar.Brand
+              href="#"
+              style={{
+                width: "100%",
+                height: "20%",
+                padding: "0px",
+                margin: "0px",
+                marginTop: "-4%",
+              }}
+            >
+              <Img src={Logo} alt="" />
+            </Navbar.Brand>
+          </Container>
+        </Navbar>
+      </Mobile>
+    </>
+  );
+};
 
-    const [activeHome, setActiveHome] = useState(true)
-    const [activeFeatures, setActiveGame] = useState(false)
-    const [activeNFT, setActiveMarket] = useState(false)
-
-    const toggleClass = (e) => {
-        if (e.target.childNodes[0].data === "HOME") {
-            setActiveHome(true); setActiveGame(false); setActiveMarket(false); onClickMenu();
-        } else if (e.target.childNodes[0].data === "GAMES") {
-            setActiveHome(false); setActiveGame(true); setActiveMarket(false); onClickMenu();
-        } else {
-            setActiveHome(false); setActiveGame(false); setActiveMarket(true); onClickMenu();
-        }
-    }
-    return (
-        <>
-            <Desktop>
-                <header>
-                    <div class="container">
-                    <div class="row">
-                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-2">
-
-                    <div id="navigation">
-                        <div class="logo-top">
-                        <img src={Logo} alt=""/>
-                                </div>
-                                <div id="menu" onClick={()=> {onClickMenu()}}>
-                                <div id="bar1" class="bar"></div>
-                                <div id="bar2" class="bar"></div>
-                                <div id="bar3" class="bar"></div>
-                                </div>
-                                <div id="nav">
-                                <ul class="navul">
-                                    <li class="navli" id={activeHome ? 'selected' : null} onClick={toggleClass}><a href="#navDisplay">Home</a></li>
-                                    <li class="navli" id={activeFeatures ? 'selected' : null} onClick={toggleClass}><a href="#navFeatures">Features</a></li>
-                                    <li class="navli" id={activeNFT ? 'selected' : null} onClick={toggleClass}><a href="#navNFT">NFT</a></li>
-                                    {/* <li class="navli" id={activeFooter ? 'selected' : null} onClick={toggleClass}><a href="#nftcomponent">NFT Collections</a></li> */}
-                                    {/* <li class="navli"><a href="#">gallery</a></li> */}
-                                </ul>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-md-6 col-md-6 col-lg-6 col-sm-6 col-xs-2">
-                            <div class="social">
-                                <ul>
-                                <li>
-                                    <a href="https://twitter.com/LordsOfTheLands" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/lords_ofthe_lands/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
-                                </li>
-                                <a href="https://discord.com/invite/jp5Eewwu2P" className="btn-s" target="_blank" rel="noreferrer">join discord</a>
-                                </ul>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                </header>
-            </Desktop>
-            <Mobile>
-            <Navbar style={{background: "rgba(255, 255, 255, 0.2)", backdropFilter: "blur(10px)", height: "12%", textAlign: "center"}} expand={false} fixed="top">
-  <Container fluid>
-    <Navbar.Brand href="#" style={{width:"100%", height:"20%", padding:"0px", margin: "0px", marginTop:"-4%"}}><Img src={Logo} alt=""/></Navbar.Brand>
-  </Container>
-</Navbar>
-            </Mobile>
-        </>
-    )
-}
-
-export default NavBar
-
+export default NavBar;
 
 const Desktop = styled.div`
-@media screen and (max-width:763px) {
+  @media screen and (max-width: 763px) {
     display: none;
-}
-`
+  }
+`;
 
 const Mobile = styled.div`
-@media screen and (min-width: 763px){
+  @media screen and (min-width: 763px) {
     display: none;
-    background: linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3)),url("./images/cover.png");
+    background: linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3)),
+      url("./images/cover.png");
     box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 15px;
-}
-
-`
+  }
+`;
 
 const Img = styled.img`
-    width: 40%;
+  width: 40%;
 
-@media screen and (max-width: 520px){
+  @media screen and (max-width: 520px) {
     width: 60%;
     margin-left: 5%;
+  }
 
-}
-
-@media screen and (max-width: 320px){
+  @media screen and (max-width: 320px) {
     width: 70%;
     margin-left: 5%;
-}
-`
+  }
+`;

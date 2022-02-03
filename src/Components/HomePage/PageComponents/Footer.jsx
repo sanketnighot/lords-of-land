@@ -3,7 +3,7 @@ import {Container, Row, Col} from 'react-bootstrap/';
 import './style.css';
 import './responsiveStyle.css';
 import styled from 'styled-components';
-import Logo from './images/logo.png'
+import Logo from './images/Whitelogo.png'
 
 
 const Footer = () => {
@@ -11,14 +11,13 @@ const Footer = () => {
         <>
             <Container style={{marginTop:"1%", textAlign:"center"}} > 
                 <Row className="justify-content-lg-center">
-                    <Col xs lg="8">
+                    <Col xs lg="8" className="wlogo">
                         <Image src={Logo} alt="" />
                     </Col>
                 </Row>
                 <Row className="justify-content-lg-center">
                   
                     <Col xs lg="8">
-                        <Text>Lords of The Lands NFT Property</Text>
                     </Col>
                     
                 </Row>

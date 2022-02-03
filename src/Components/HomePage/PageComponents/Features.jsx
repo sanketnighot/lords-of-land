@@ -27,7 +27,7 @@ const Features = () => {
         <>
         <div>
             <div className='features' style={{background: "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))", backgroundImage: 'url(' + featureback + ')', backgroundSize: "contain",backgroundRepeat: "no-repeat", height: '100%', width:"100%", backgroundPosition: "center right"}}>
-                <Feature>Features of LOL</Feature>
+                <h1>Features of LOL</h1>
                 <Desktop>
                     <Carouseldiv>
                         <Carousel>

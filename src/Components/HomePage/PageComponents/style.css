@@ -1,35 +1,8 @@
-@font-face {
-  font-family: uni-heavy Sans;
-  src: url(./fonts/uni-sans/UNI\ SANS\ HEAVY.OTF);
-  font-style: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-@font-face {
-  font-family: uni-bold Sans;
-  src: url(./fonts/uni-sans/UNTITLEDSANSTEST-BOLD.OTF);
-  font-style: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-@font-face {
-  font-family: uni-regular Sans;
-  src: url(fonts/uni-sans/UNI\ SANS\ REGULAR.OTF);
-  font-style: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-@font-face {
-  font-style: normal;
-  font-family: uni-heavy-bold-italic Sans;
-  src: url(./fonts/uni-sans/UNTITLEDSANSTEST-BOLDITALIC.OTF);
-  font-weight: bold;
-  text-transform: uppercase;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 a,
 p {
-  font-family: uni-regular Sans !important;
+  font-family: "Poppins", sans-serif !important;
 }
 h1,
 h3,
@@ -39,7 +12,7 @@ h6 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: uni-bold Sans !important;
+  font-family: "Poppins", sans-serif !important;
 }
 * {
   margin: 0;
@@ -47,11 +20,12 @@ h6 {
   box-sizing: border-box;
 }
 body {
-  background-color: #080e18  !important;
+  background-color: #080e18 !important;
 }
 header {
-  background: linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3)),url("./images/cover.png");
-    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 15px;
+  background: linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3)),
+    url("./images/cover.png");
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 15px;
 }
 .coming {
   font-size: 33px;
@@ -73,9 +47,9 @@ header {
   margin: 0 auto;
   padding-top: 2px;
   text-align: center;
-  height: 30px;
-  width: 30px;
-  background-color: black;
+  height: 40px;
+  border: 1px solid #fff;
+  width: 40px;
   margin: 5px 7px;
   list-style-type: none;
   border-radius: 50%;
@@ -85,9 +59,9 @@ header {
   text-decoration: none;
 }
 .social ul li a i {
-  padding-top: 6px;
+  padding-top: 10px;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
 }
 .social ul {
@@ -101,7 +75,7 @@ header {
 
 .btn-s {
   border: 1px solid #fff;
-  background-color: black;
+  background-color: transparent;
   padding: 7px 30px;
   color: #fff;
   border-radius: 25px;
@@ -109,10 +83,8 @@ header {
   text-transform: capitalize;
   box-shadow: 0px 1px 6px 0px #000;
 }
-.btn-s:hover{
-
-  color: #000;
-  background-color: #7a57a5;
+.btn-s:hover {
+  color: #fff;
 }
 
 .jumbotron {
@@ -260,11 +232,11 @@ header {
 }
 
 .jumbotron {
-  padding-left: 47px!important;
-  padding-top: 110px!important;
+  padding-left: 47px !important;
+  padding-top: 110px !important;
 }
 .jumbotron p {
-  font-family: uni-regular sans;
+  font-family: "Poppins", sans-serif;
   padding: 20px 0px !important;
   margin-bottom: 15px;
   font-size: 15px !important;
@@ -298,7 +270,7 @@ html {
   height: 472px;
   border-radius: 25px;
 }
-    
+
 #suraj {
   width: 1100px;
   position: relative;
@@ -373,7 +345,7 @@ h3 {
   margin: 20px 0px;
   padding: 0px;
   text-transform: capitalize;
-  font-family: uni-bold sans;
+  font-family: "Poppins", sans-serif;
   background: -webkit-linear-gradient(#2afff0, #7eff66);
   -webkit-background-clip: text;
   background-clip: text;
@@ -385,7 +357,7 @@ h3 {
   text-align: center;
   margin: 20px 0px;
   padding: 0px;
-  font-family: uni-regular sans;
+  font-family: "Poppins", sans-serif;
   background: -webkit-linear-gradient(#2afff0, #66ffeb);
   -webkit-background-clip: text;
   background-clip: text;
@@ -437,14 +409,15 @@ h3 {
 }
 
 #inner {
-  transform: rotate(49deg);
+  transform: rotate(41deg);
   background-color: #081b2c;
-  width: 79px;
-  height: 110px;
-  top: 17px;
-  left: -42px;
+  width: 95px;
+  height: 131px;
+  top: 21px;
+  left: -31px;
   position: relative;
   border-radius: 20px;
+  z-index: -9;
 }
 .tri-info li {
   list-style: none;
@@ -543,33 +516,35 @@ h3 {
   overflow: hidden;
 }
 .main-info {
-  left: 19.9%;
   position: absolute;
   top: 1.5%;
+  left: 14%;
 }
 .main-info-2 {
-  left: 30%;
+  left: 14%;
   position: absolute;
-  top: 10%;
+  top: 31%;
 }
 .main-info-3 {
-  top: 18.5%;
+  top: 60%;
   position: absolute;
-  left: 36.2%;
+  left: 14%;
 }
 .main-info-4 {
-  top: 28%;
+  top: 2%;
   position: absolute;
-  left: 36.5%;
+  left: 51.5%;
+  z-index: 999;
 }
 .main-info-5 {
-  top: 37%;
-  left: 32%;
+  top: 30%;
+  left: 51.5%;
   position: absolute;
+  z-index: 9999;
 }
 .main-info-6 {
-  left: 22%;
-  top: 47%;
+  left: 51.5%;
+  top: 60%;
   position: absolute;
 }
 .rhead {
@@ -579,12 +554,12 @@ h3 {
 /* road map traingle css end here */
 .text {
   position: absolute;
-  height: 94px;
+  height: 112px;
   background: #081b2c;
   text-align: center;
   padding: 2px 5px;
-  width: 187px;
-  right: -183px;
+  width: 204px;
+  right: -203px;
   margin: 0px;
 }
 .text h5 {
@@ -592,13 +567,12 @@ h3 {
   padding-top: 7px;
   color: #fff !important;
   font-size: 17px;
-  font-family: uni-bold Sans !important;
+  font-family: "Poppins", sans-serif !important;
   margin: 0px;
 }
 .roadmap {
   position: relative;
-  padding-top: 191px;
-  height: 130vh;
+  height: 80vh;
 }
 .tri-info {
   display: flex;
@@ -640,7 +614,7 @@ h3 {
   background-color: #222a34;
   border-radius: 50%;
 }
-.main-info::after {
+/* .main-info::after {
   transform: rotate(-62deg);
   content: "";
   left: -19px;
@@ -705,68 +679,8 @@ h3 {
   background-color: #fff;
   position: absolute;
   z-index: -99;
-}
-.main-info::before {
-  left: 9px;
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  top: 134px;
-}
-.main-info-2::before {
-  left: -73px;
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  top: 57px;
-}
-.main-info-3::before {
-  left: -106px;
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  top: 34px;
-}
-.main-info-4::before {
-  left: -100px;
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  top: 12px;
-}
-.main-info-5::before {
-  left: -58px;
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  top: -18px;
-}
+} */
 
-.main-info-6::before {
-  left: -8px;
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  top: -80px;
-}
 .half-cir {
   left: 16%;
   transform: rotate(86deg);
@@ -798,35 +712,31 @@ h3 {
   left: -7px;
 }
 .s-cir {
-  width: 94px;
+  width: 113px;
   transform: rotate(-89deg);
-  height: 87px;
+  height: 113px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   border: 10px solid #081b2c;
   border-bottom: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
   background: #081b2c;
 }
 .text p {
   letter-spacing: 0.5px !important;
-  font-family: uni-regular Sans;
+  font-family: "Poppins", sans-serif;
   padding-top: 10px;
   color: #fff;
   text-align: left;
   font-size: 12px;
 }
 .img-icon {
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   box-shadow: inset -4px -4px 8px rgb(8 15 24),
     inset 8px 8px 16px rgb(0 0 0 / 10%);
-  left: -172px;
-  top: -32px;
 }
 
 .roadmap h3 {
@@ -857,19 +767,24 @@ svg:not(:root) {
   letter-spacing: 0.5px;
   margin-top: -36px;
   color: #ffffffd9;
+  line-height: 45px;
   font-size: 16px;
+  background: -webkit-linear-gradient(#2afff0, #7eff66);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hut {
+  margin-top: 20px;
   position: relative;
   background-image: url("./images/hut.png");
   background-size: cover;
   align-self: right;
   background-repeat: no-repeat;
   height: 70vh;
-  background-position: 75% 50%
 }
 .blur-box {
-  width: 500px;
+  width: 565px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
@@ -879,7 +794,7 @@ svg:not(:root) {
   border-radius: 20px;
 }
 .blur-box p {
-  font-family: uni-heavy Sans;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   background: -webkit-linear-gradient(#fff, #fff);
   -webkit-background-clip: text;
@@ -887,7 +802,9 @@ svg:not(:root) {
   -webkit-text-fill-color: transparent;
 }
 .blur-box h3 {
-  font-family: uni-bold Sans;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   background: -webkit-linear-gradient(#fff, #fff);
   -webkit-background-clip: text;
@@ -895,10 +812,11 @@ svg:not(:root) {
   -webkit-text-fill-color: transparent;
 }
 .bg-gradient {
-  background: linear-gradient( #2afff0, #46f028);
+  background: linear-gradient(#2afff0, #46f028);
   width: 320px;
   height: 325px;
-  border-radius: 25px;}
+  border-radius: 25px;
+}
 .play {
   width: 337px;
   height: 411px;
@@ -907,7 +825,7 @@ svg:not(:root) {
   margin: 5px -8px;
   border-radius: 25px;
 }
-.play{
+.play {
   background-image: url(./images/ezgif.com-gif-maker.gif);
   background-repeat: no-repeat;
   background-size: cover;
@@ -932,7 +850,7 @@ svg:not(:root) {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: uni-Heavy sans;
+  font-family: "Poppins", sans-serif;
 }
 .play-team h3 {
   color: #fff;
@@ -987,7 +905,7 @@ svg:not(:root) {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: uni-Heavy sans;
+  font-family: "Poppins", sans-serif;
 }
 .logo {
   position: relative;
@@ -1011,11 +929,12 @@ svg:not(:root) {
 }
 .metaverse {
   margin: auto;
-  width: 90%;
+  width: 65%;
 }
 .meta {
   box-shadow: 0px -100px 12px #070e17;
   background-color: #080f18;
+  padding-top: 53px;
   /* owl css dots css */
 }
 #suraj.owl-theme .owl-dots .owl-dot span {
@@ -1045,3 +964,32 @@ svg:not(:root) {
   margin-left: 518px;
   background: -webkit-linear-gradient(#2afff0, #46f028);
 }
+/* react css added    by suraj */
+.DiscordBtn {
+}
+.roadmap h1,
+.features h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.nft {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.wlogo img {
+  padding: 40px 0px;
+  width: 20%;
+}
+.w-100 {
+  width: 83% !important;
+  margin: 0 auto!important;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+  background: none;
+}
+.carousel-indicator{
+display: inline-block;
+position: absolute;
+  top: 10px;
+}
+/* react css ended    by suraj */
