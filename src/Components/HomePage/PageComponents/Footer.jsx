@@ -18,7 +18,7 @@ const Footer = () => {
                 <Row className="justify-content-lg-center">
                   
                     <Col xs lg="8">
-                        <Text>Lords of Lands NFT Property</Text>
+                        <Text>Lords of The Lands NFT Property</Text>
                     </Col>
                     
                 </Row>

@@ -44,7 +44,7 @@
   "resolutions": {
     "styled-components": "^5"
   },
-  "homepage": "http://sanketnighot.github.io/lords-of-land",
+  "homepage": "http://www.lordsofthelands.io/",
   "devDependencies": {
     "gh-pages": "^3.2.3"
   }

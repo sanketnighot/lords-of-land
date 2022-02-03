@@ -61,18 +61,12 @@ const NavBar = () => {
                             <div class="social">
                                 <ul>
                                 <li>
-                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/LordsOfTheLands" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i className="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/lords_ofthe_lands/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
                                 </li>
-                                <li>
-                                    <a href="#"><i className="fab fa-telegram-plane"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i className="fab fa-instagram"></i></a>
-                                </li>
-                                <a href="#" className="btn-s">join discord</a>
+                                <a href="https://discord.com/invite/jp5Eewwu2P" className="btn-s" target="_blank" rel="noreferrer">join discord</a>
                                 </ul>
                             </div>
                             </div>

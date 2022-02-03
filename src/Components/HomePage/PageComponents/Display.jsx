@@ -5,7 +5,6 @@ import button from './images/button.png';
 import styled from 'styled-components';
 import {Container, Row, Col} from 'react-bootstrap/';
 import './responsiveStyle.css';
-import Navbar from './NavBar'
 
 const Display = () => {
     return (
