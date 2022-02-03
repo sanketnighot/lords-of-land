@@ -3,7 +3,7 @@ import Display from './PageComponents/Display';
 import Features from './PageComponents/Features';
 import NFTComponent from './PageComponents/NFTComponent';
 import Footer from './PageComponents/Footer';
-import NavBar from './PageComponents/NavBar';
+import NavBar from './PageComponents/Navbar';
 const Home = () => {
     return (
         <>
