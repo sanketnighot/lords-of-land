@@ -1081,4 +1081,7 @@ svg:not(:root) {
   text-align: center;
   padding: 40px 0px;
 } 
+.main-info-6 .text h5{
+  padding-top: 40px;
+}
 /* react css ended    by suraj */
