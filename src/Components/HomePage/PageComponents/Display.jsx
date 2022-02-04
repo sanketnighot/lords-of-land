@@ -27,7 +27,7 @@ const Display = () => {
       >
         <Container>
           <Row className="">
-            <Col xs={12} md={8}>
+            <Col xs={12} md={8} sm={12}>
               <ComingSoon className="coming-soon">
                 <h2
                   style={{

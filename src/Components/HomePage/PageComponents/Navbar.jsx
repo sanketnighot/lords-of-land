@@ -112,24 +112,16 @@ const NavBar = () => {
       <Mobile>
         <Navbar
           style={{
-            background: "rgba(255, 255, 255, 0.2)",
-            backdropFilter: "blur(10px)",
-            height: "12%",
-            boxShadow: "#000000 123px 209px 347px 95px inset",
-            textAlign: "center",
+          
           }}
           expand={false}
-          fixed="top"
+          
         >
           <Container fluid>
             <Navbar.Brand
               href="#"
               style={{
-                width: "100%",
-                height: "20%",
-                padding: "0px",
-                margin: "0px",
-                marginTop: "-4%",
+                
               }}
             >
               <Img src={Logo} alt="" />
@@ -156,15 +148,15 @@ const Mobile = styled.div`
 `;
 
 const Img = styled.img`
-  width: 40%;
+  // width: 40%;
 
-  @media screen and (max-width: 520px) {
-    width: 60%;
-    margin-left: 5%;
-  }
+  // @media screen and (max-width: 520px) {
+  //   width: 60%;
+  //   margin-left: 5%;
+  // }
 
-  @media screen and (max-width: 320px) {
-    width: 70%;
-    margin-left: 5%;
-  }
-`;
+  // @media screen and (max-width: 320px) {
+  //   width: 70%;
+  //   margin-left: 5%;
+  // }
+// `;
