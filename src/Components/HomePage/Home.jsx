@@ -3,7 +3,7 @@ import Display from './PageComponents/Display';
 import Features from './PageComponents/Features';
 import NFTComponent from './PageComponents/NFTComponent';
 import Footer from './PageComponents/Footer';
-import NavBar from './PageComponents/NavBar';
+import NavBar from './PageComponents/Navbar';
 import style from './PageComponents/style.css';
 const Home = () => {
     return (
@@ -11,7 +11,7 @@ const Home = () => {
         <div>
                
             <div className="navDisplay" id="navDisplay">
-            <NavBar/>
+                <NavBar/>
                 <Display/>
             </div>
             <div className="navFeatures" id="navFeatures" style={{marginTop:"10%"}}>
