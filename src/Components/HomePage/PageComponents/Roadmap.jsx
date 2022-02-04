@@ -27,12 +27,9 @@ const Roadmap = () => {
               <Col style={{ width: "40%" }}>
                 {/* <RoadmapPt1/> */}
                 {/* <img src={RoadmapPt2} alt=""style={{height: "70%", width:"70%", marginLeft:"15%"}}/> */}
-                <Desktop>
+               
                   <RoadmapPt1/>
-                </Desktop>
-                <Mobile>
-                  <RoadmapResponsive />
-                </Mobile>
+                  {/* <RoadmapResponsive /> */}
               </Col>
             </Row>
           </Container>
@@ -61,14 +58,5 @@ const Text = styled.h1`
   }
 `;
 
-const Desktop = styled.div`
-  @media screen and (max-width: 763px) {
-    display: none;
-  }
-`;
 
-const Mobile = styled.div`
-  @media screen and (min-width: 763px) {
-    display: none;
-  }
-`;
+

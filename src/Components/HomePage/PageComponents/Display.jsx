@@ -1,7 +1,7 @@
 import React from "react";
 // import show from './images/cover.png';
 
-import hide from "./images/unrevealed.png";
+import hide from "./images/Mainbackground.png";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap/";
 import "./responsiveStyle.css";
@@ -14,7 +14,7 @@ const Display = () => {
       <div
         className="home"
         style={{
-            boxShadow: "#000000 123px 209px 347px 95px inset",
+            boxShadow: "rgb(8 14 24) 20px -15px 0px 11px inset",
           background:
             "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))",
           backgroundImage: "url(" + hide + ")",
@@ -38,7 +38,7 @@ const Display = () => {
                 >
                   <span
                     style={{
-                      color: "#BE7DFF",
+                      color: "#FC67FF",
                       textShadow: "2px 2px 10px black",
                       fontSize: "120%",
                       fontWeight: 700,

@@ -22,11 +22,11 @@ h6 {
 body {
   background-color: #080e18 !important;
 }
-header {
+/* header {
   background-size: cover;
   background-repeat: no-repeat;
   background: url("./images/unrevealed.png");
-}
+} */
 .coming {
   font-size: 33px;
   color: #763ad7;
@@ -524,17 +524,17 @@ h3 {
 .main-info {
   position: absolute;
   top: 1.5%;
-  left: 7%;
+  left: 4%;
 }
 .main-info-2 {
-  left: 7%;
+  left: 4%;
   position: absolute;
   top: 31%;
 }
 .main-info-3 {
   top: 60%;
   position: absolute;
-  left: 7%;
+  left: 4%;
 }
 .main-info-4 {
   top: 2%;
@@ -793,13 +793,12 @@ svg:not(:root) {
   -webkit-text-fill-color: transparent;
 }
 .hut {
-  margin-top: 20px;
   position: relative;
-  background-image: url("./images/hut.png");
+  background-image: url(./images/hut.png);
   background-size: cover;
   align-self: right;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 130vh;
 }
 .blur-box {
   width: 600px;
@@ -946,14 +945,22 @@ svg:not(:root) {
   width: 100%;
 }
 .metaverse {
-  margin: auto;
+  padding-top: 179px;
+  margin: 0 auto;
   width: 65%;
 }
 .meta {
+  background:url(./images/playerbackground.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
   box-shadow: 0px -100px 12px #070e17;
   background-color: #080f18;
   padding-top: 53px;
-  /* owl css dots css */
+  box-shadow: 0px -100px 12px #070e17;
+  background-color: #080f18;
+  padding-top: 53px;
 }
 #suraj.owl-theme .owl-dots .owl-dot span {
   width: 66px;
@@ -1003,14 +1010,7 @@ svg:not(:root) {
   width: 100% !important;
   height: 100%;
 }
-.carousel {
-  margin: 2px auto;
-  width: 701px;
-  background: linear-gradient(45deg, #3cffd3, #64ff8f);
-  height: 354px;
-  position: relative;
-  border-radius: 25px;
-}
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background: none;
@@ -1019,6 +1019,7 @@ svg:not(:root) {
   bottom: -50px;
 }
 .carousel-indicators [data-bs-target] {
+  overflow: visible;
   height: 6px;
   margin: 5px 7px;
   display: block;
@@ -1029,8 +1030,9 @@ svg:not(:root) {
   border: none;
   border-radius: 5px;
 }
-.carousel-inner {
-  margin-bottom: 50px;
+
+.carousel-item {
+  width: 100%;
 }
 .logo1 img {
   padding: 50px 0px;
@@ -1041,4 +1043,42 @@ svg:not(:root) {
   margin-top: 112px;
   padding: 70px 0px;
 }
+.w-100 {
+  z-index: -9999999999;
+  margin-top: -17px;
+  padding-bottom: 1px;
+  border-radius: 25px;
+  width: 992px !important;
+  height: 427px;
+  margin-bottom: 18px;
+  margin-left: -37px;
+}
+.slide {
+  overflow: hidden;
+  z-index: 9999999;
+  width: 850px;
+  margin: 0 auto;
+  height: 398px;
+  border-radius: 25px;
+  border: 5px solid #64ff8f;
+  border-radius: 25px;
+}
+
+.dwkRqA {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.navDisplay {
+  background-image: url(./images/Mainbackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wlogo h1{
+
+  font-weight: 600;
+  text-align: center;
+  padding: 40px 0px;
+} 
 /* react css ended    by suraj */
