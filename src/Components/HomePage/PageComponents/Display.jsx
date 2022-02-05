@@ -22,7 +22,7 @@ const Display = () => {
           backgroundRepeat: "no-repeat",
           height: "100%",
           width: "100%",
-          backgroundPosition: "75% 50%",
+          backgroundPosition: "80% 50%",
         }}
       >
         <Container>
