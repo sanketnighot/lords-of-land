@@ -12,7 +12,7 @@ import logotop from "./images/logo-top.png";
 const RoadmapPt1 = () => {
   return (
     <>
-      <section className="roadmap">
+      <section className="roadmap wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s" >
         <div class="container">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-6">
@@ -62,7 +62,7 @@ const RoadmapPt1 = () => {
                 </span>
               </div>
 
-              <div className="main-info-3">
+              <div className="main-info-3 ">
                 <ul className="tri-info">
                   <span className="s-cir">
                     <div className="img-icon">

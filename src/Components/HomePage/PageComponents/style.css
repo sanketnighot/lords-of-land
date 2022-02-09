@@ -4,6 +4,7 @@ a,
 p {
   font-family: "Poppins", sans-serif !important;
 }
+
 h1,
 h3,
 h4,
@@ -1037,7 +1038,6 @@ svg:not(:root) {
   padding-bottom: 1px;
   border-radius: 25px;
   width: 100%;
-  margin: 0 auto;
 }
 .slide {
   overflow: hidden;
@@ -1243,6 +1243,9 @@ svg:not(:root) {
     text-align: left;
     font-size: 8px;
   }
+  .Slider-text h1 {
+    font-size: 1rem!important;
+}
   .hut {
     height: 39vh;
   }
@@ -1346,5 +1349,43 @@ svg:not(:root) {
     left: 15%;
     z-index: 999;
   }
+}
+.slider-wrapper{
+  overflow: hidden;
+  z-index: 9999999;
+  width: 850px;
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 25px;
+  border: 5px solid #64ff8f;
+  border-radius: 25px;
+}
+.slide-image-container img{
+  width: 100% !important;
+  height: 100%;
+}
+.slick-slider {
+  padding: 0px;
+}
+.slider-text-wrapper{
+  overflow: hidden;
+  z-index: 9999999;
+  width: 850px;
+  margin: 0 auto;
+  height: 100%;
+}
+.slick-slide img {
+  height: 100%;
+  margin: 0px;
+}
+ 
+.Slider-text{
+  padding-top: 46px;
+}
+.Slider-text h1{
+  font-size: 3rem;
+}
+.slick-slide img {
+  display: inline-block;
 }
 /* react css ended    by suraj */

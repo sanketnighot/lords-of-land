@@ -5,6 +5,7 @@ import NFTComponent from './PageComponents/NFTComponent';
 import Footer from './PageComponents/Footer';
 import NavBar from './PageComponents/Navbar';
 import style from './PageComponents/style.css';
+import SimpleSlider from './PageComponents/SimpleSlider';
 const Home = () => {
     return (
         <>
@@ -23,6 +24,7 @@ const Home = () => {
             <div className="navFooter" id="navFooter">
                 <Footer/>
             </div>
+            
         </div>
 
         </>

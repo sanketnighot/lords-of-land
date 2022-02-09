@@ -14,7 +14,7 @@ const Display = () => {
       <div
         className="home"
         style={{
-            boxShadow: "rgb(8 14 24) 20px -15px 0px 11px inset",
+
           background:
             "linear-gradient(84deg, rgb(0 0 0 / 36%), rgba(37, 36, 37, 0.3))",
           backgroundImage: "url(" + hide + ")",

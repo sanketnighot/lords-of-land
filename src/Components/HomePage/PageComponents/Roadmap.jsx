@@ -27,7 +27,6 @@ const Roadmap = () => {
               <Col style={{ width: "40%" }}>
                 {/* <RoadmapPt1/> */}
                 {/* <img src={RoadmapPt2} alt=""style={{height: "70%", width:"70%", marginLeft:"15%"}}/> */}
-               
                   <RoadmapPt1/>
                   {/* <RoadmapResponsive /> */}
               </Col>
