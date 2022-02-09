@@ -6,6 +6,7 @@ class SliderText extends React.Component {
   
   render() {
     var settings = {
+        
       dots: true,
 autoplay:true,
 fade: true,
