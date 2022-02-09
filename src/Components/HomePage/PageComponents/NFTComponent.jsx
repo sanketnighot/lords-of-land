@@ -15,14 +15,7 @@ const NFTComponent = () => {
           <Container>
             <Row className="justify-content-center">
               <Col style={{ textAlign: "center" }}>
-                <h1
-                  style={{
-                    textAlign: "center",
-                    fontSize: "52px",
-                    fontWeight: " 700",
-                    lineHeight: "78px",
-                  }}
-                >
+                <h1>
                   NFT’s
                 </h1>
               </Col>
