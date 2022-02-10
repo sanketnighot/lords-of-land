@@ -28,10 +28,10 @@ const NFTComponent = () => {
               <Para className="nft-para">
                 <p>
                   Lords of Lands are a prestigious collection of unique Avatars
-                  #Lords, and virtual #Lands.</p><p>#LOL allows users to mint NFTs as
+                  #Lords, and virtual #Lands.#LOL allows users to mint NFTs as
                   avatars, gadgets, wearables, skins as well as buy a space of
                   future real estate.</p> <p>Enter the metaverse of Online Real Estate
-                  Development</p> <p>Unlock your Virtual Abundance : Avatar, Digilands,
+                  Development Unlock your Virtual Abundance : Avatar, Digilands,
                   Communities & more...
                 </p>
               </Para>
@@ -150,19 +150,15 @@ const NFTDiv = styled.div`
   align-items: center;
 
   @media screen and (max-width: 763px) {
-    margin-top: 55%;
+    margin-top: 14%;
     padding-top: 30%;
   }
 
-  @media screen and (max-width: 375px) {
-    padding-top: 110%;
-    margin-top: 110%;
-  }
 `;
 
 const Para = styled.div`
   @media screen and (max-width: 763px) {
-    margin-top: 20%;
+    margin-top: 4%;
     margin-left: 0%;
     margin-right: 0%;
     padding: 1%;

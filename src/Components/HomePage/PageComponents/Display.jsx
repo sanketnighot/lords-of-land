@@ -9,7 +9,7 @@ import "./responsiveStyle.css";
 const Display = () => {
   return (
     <div
-      style={{ backgroundColor: "black", height: "110vh", minHeight: "100vh" }}
+      style={{ }}
     >
       <div
         className="home"

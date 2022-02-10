@@ -10,7 +10,9 @@ class SimpleSlider extends React.Component {
     var settings = {
       dots: true,
 autoplay:true,
+swipe:false,
 pauseOnHover:false,
+
 
 responsive: [{
   breakpoint: 600,

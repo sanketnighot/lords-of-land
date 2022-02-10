@@ -13,7 +13,7 @@ const Footer = () => {
                 <Row className="justify-content-lg-center">
                     <Col xs lg="8" className="wlogo">
                         <Image src={Logo} alt="" />
-                        <h1>Lords of Lands NFT Property</h1>
+                        <h1 className="foot-h">Lords of Lands NFT Property</h1>
                     </Col>
                 </Row>
                 <Row className="justify-content-lg-center">
