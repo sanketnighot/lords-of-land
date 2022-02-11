@@ -1,11 +1,11 @@
 import React from "react";
 // import show from './images/cover.png';
 import { Location } from "react-router-dom";
-import hide from "./images/Mainbackground.png";
+import hide from "./images/Mainbackgroundlol.png";
 import styled from "styled-components";
+import NavBar from "./Navbar"
 import { Container, Row, Col } from "react-bootstrap/";
 import "./responsiveStyle.css";
-
 const Display = () => {
   return (
     <div
@@ -22,9 +22,12 @@ const Display = () => {
           backgroundRepeat: "no-repeat",
           height: "100vh",
           width: "100%",
-          backgroundPosition: "80% 50%",
+          backgroundPosition: "center",
         }}
       >
+                
+                
+                <NavBar/>
         <Container>
           <Row className="">
             <Col xs={12} md={8} sm={12}>
@@ -57,7 +60,7 @@ const Display = () => {
                     fontSize: "150%",
                   }}
                 >
-                  Own Land in the <strong>ProperT Land Metaverse</strong>
+                  Own Land in the <strong>LOL Metaverse</strong>
                 </h2>
                 <div className="discord-btn" style={{ marginTop: "50px" }}>
                   <DiscordBtn

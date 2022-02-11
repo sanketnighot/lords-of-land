@@ -13,7 +13,6 @@ const Home = () => {
         <div>
                
             <div className="navDisplay" id="navDisplay">
-                <NavBar/>
                 <Display/>
             </div>
             <div className="navFeatures" id="navFeatures" style={{marginTop:"10%"}}>
