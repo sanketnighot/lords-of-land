@@ -20,7 +20,7 @@ const Display = () => {
           backgroundImage: "url(" + hide + ")",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height: "100%",
+          height: "100vh",
           width: "100%",
           backgroundPosition: "80% 50%",
         }}

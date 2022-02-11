@@ -6,6 +6,7 @@ import Footer from './PageComponents/Footer';
 import NavBar from './PageComponents/Navbar';
 import style from './PageComponents/style.css';
 import SimpleSlider from './PageComponents/SimpleSlider';
+import RoadmapNew from './PageComponents/RoadmapNew';
 const Home = () => {
     return (
         <>
@@ -24,7 +25,8 @@ const Home = () => {
             <div className="navFooter" id="navFooter">
                 <Footer/>
             </div>
-            
+            <div>
+            </div>
         </div>
 
         </>
