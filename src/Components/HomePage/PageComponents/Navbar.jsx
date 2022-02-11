@@ -90,13 +90,14 @@ const NavBar = () => {
                 <div class="social">
                   <ul>
                     <li>
-                      <a href="#">
-                        <i className="fab fa-facebook-f"></i>
+                      <a className="insta" style={{cursor:"pointer"}} onClick={()=>{window.location.href='https://www.instagram.com/lords_ofthe_lands/'}}>
+                      <i class="fa-brands fa-instagram"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fab fa-instagram"></i>
+                      <a style={{cursor:"pointer"}}
+                       onClick={()=>{window.location.href='https://twitter.com/LordsOfTheLands'}}>
+                      <i class="fa-brands fa-twitter"></i>
                       </a>
                     </li>
                     <a href="#" className="btn-s">

@@ -1,6 +1,6 @@
 import React from "react";
 // import show from './images/cover.png';
-
+import { Location } from "react-router-dom";
 import hide from "./images/Mainbackground.png";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap/";
@@ -63,8 +63,9 @@ const Display = () => {
                   <DiscordBtn
                     style={{}}
                     onClick={() => {
-                      console.log("clicked");
+                     window.location.href = 'https://discord.com/invite/jp5Eewwu2P';
                     }}
+                   
                   >
                      JOIN DISCORD
                   </DiscordBtn>
