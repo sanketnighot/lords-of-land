@@ -20,14 +20,12 @@ const Home = () => {
             <div className="navNFT" id="navNFT">
                 <NFTComponent/>
             </div>
+            
             <div className="navFooter" id="navFooter">
                 <Footer/>
             </div>
-            
-            <div>
-            </div>
+           
         </div>
-
         </>
     )
 }

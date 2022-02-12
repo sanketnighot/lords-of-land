@@ -64,7 +64,20 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+            <div className="col-md-6 col-lg-12 col-sm-12 col-xs-12">
+              <div className="social-media">
+                <ul className="socio-wrap">
+                  <li><a ><i class="fa-brands fa-instagram" onClick={() => {
+                     window.location.href = 'https://www.instagram.com/lords_ofthe_lands/';
+                    }}></i></a></li>
+                  <li><a ><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a onClick={() => {
+                     window.location.href = 'https://twitter.com/LordsOfTheLands';
+                    }}><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-12 col-sm-12 col-xs-12">
               <ul className="bottom-footer">
                 <li>
                   <a href="#">@ Lords of the Lands</a>

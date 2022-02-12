@@ -1169,9 +1169,10 @@ svg:not(:root) {
   padding: 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .bottom-footer li {
+  margin: 0px 10px;
   list-style: none;
 }
 .bottom-footer li a {
@@ -1443,40 +1444,40 @@ svg:not(:root) {
     margin: 6px 13px 0px 0px !important;
     list-style: none;
   }
-  .page-list{
+  .page-list {
     padding-top: 0px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
-  .page-list ul{
+  .page-list ul {
     padding: 0px;
   }
-  .page-list ul li a{
+  .page-list ul li a {
     font-size: 14px;
   }
   .footer-logo img {
     width: 57%;
     padding-top: 27px;
     padding-bottom: 27px;
-}
-  .copy-right h5, .copy-right p {
+  }
+  .copy-right h5,
+  .copy-right p {
     letter-spacing: 0.5px;
     color: #fff;
     font-size: 14px;
     padding-right: 0px;
     text-align: left;
-}
-.bottom-footer {
-  padding: 0px;
-  display: block;
-  align-items: center;
-  justify-content: space-between;
-}
-.bottom-footer li a {
-  font-size: 14px;
-}
-
+  }
+  .bottom-footer {
+    padding: 0px;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bottom-footer li a {
+    font-size: 14px;
+  }
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 375px) {
   .main-info,
@@ -1501,5 +1502,32 @@ svg:not(:root) {
     left: 15%;
     z-index: 999;
   }
+}
+.socio-wrap {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.socio-wrap li {
+  box-shadow: 0px 1px 6px 0px #000;
+  margin: 0 auto;
+  padding-top: 2px;
+  text-align: center;
+  height: 40px;
+  border: 1px solid #fff;
+  width: 40px;
+  margin: 5px 7px;
+  list-style-type: none;
+  border-radius: 50%;
+}
+.socio-wrap li a{
+  padding-top: 10px;
+  color: #fff;
+ 
+}
+.socio-wrap li a i{
+  color: #fff;
+  padding-top: 10px;
 }
 /* footer css */
