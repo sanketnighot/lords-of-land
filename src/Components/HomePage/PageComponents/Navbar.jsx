@@ -90,18 +90,30 @@ const NavBar = () => {
                 <div class="social">
                   <ul>
                     <li>
-                      <a className="insta" style={{cursor:"pointer"}} onClick={()=>{window.location.href='https://www.instagram.com/lords_ofthe_lands/'}}>
-                      <i class="fa-brands fa-instagram"></i>
+                      <a
+                        className="insta"
+                        style={{ cursor: "pointer" }}
+                        onClick={() => {
+                          window.location.href =
+                            "https://www.instagram.com/lords_ofthe_lands/";
+                        }}
+                      >
+                        <i class="fa-brands fa-instagram"></i>
                       </a>
                     </li>
                     <li>
-                      <a style={{cursor:"pointer"}}
-                       onClick={()=>{window.location.href='https://twitter.com/LordsOfTheLands'}}>
-                      <i class="fa-brands fa-twitter"></i>
+                      <a
+                        style={{ cursor: "pointer" }}
+                        onClick={() => {
+                          window.location.href =
+                            "https://twitter.com/LordsOfTheLands";
+                        }}
+                      >
+                        <i class="fa-brands fa-twitter"></i>
                       </a>
                     </li>
                     <a href="#" className="btn-s">
-                   open sea
+                      open sea
                     </a>
                   </ul>
                 </div>
@@ -111,20 +123,9 @@ const NavBar = () => {
         </header>
       </Desktop>
       <Mobile>
-        <Navbar
-          style={{
-          
-          }}
-          expand={false}
-          
-        >
+        <Navbar style={{}} expand={false}>
           <Container fluid>
-            <Navbar.Brand
-              href="#"
-              style={{
-                
-              }}
-            >
+            <Navbar.Brand href="#" style={{}}>
               <Img src={Logo} alt="" />
             </Navbar.Brand>
           </Container>
@@ -160,4 +161,5 @@ const Img = styled.img`
   //   width: 70%;
   //   margin-left: 5%;
   // }
-// `;
+  //
+`;
