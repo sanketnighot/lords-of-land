@@ -1,54 +1,85 @@
-import React from 'react'
-import {Container, Row, Col} from 'react-bootstrap/';
-import './style.css';
-import './responsiveStyle.css';
-import styled from 'styled-components';
-import Logo from './images/Whitelogo.png'
-
-
-const Footer = () => {
-    return (
-        <>
-            <Container style={{marginTop:"1%", textAlign:"center"}} > 
-                <Row className="justify-content-lg-center">
-                    <Col xs lg="8" className="wlogo">
-                        <Image src={Logo} alt="" />
-                        <h1 className="foot-h">Lords of Lands NFT Property</h1>
-                    </Col>
-                </Row>
-                <Row className="justify-content-lg-center">
-                  
-                    <Col xs lg="8">
-                    </Col>
-                    
-                </Row>
-            </Container>
-        </>
-    )
+import React from "react";
+import "./style.css";
+import { Container, Row, Col, Card, CardGroup } from "react-bootstrap/";
+import footerlogo from "./images/footer-logo.png";
+function Footer() {
+  return (
+    <>
+      <section class="Footer-main">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+              <div className="footer-logo">
+                <img src={footerlogo} alt="" />
+              </div>
+              <div className="copy-right">
+               
+                <p>
+                    <span className="fw-bold d-block">
+                    © 2022 by Lords of the lands.
+                    </span>
+                  Lords of the Lands Logo are trademarks of Lords of the Lands.
+                  All other trademarks are the property of their respective
+                  owners. All rights reserved.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+              <div className="page-list">
+                <ul>
+                  <li>
+                    <a href="#">home</a>
+                  </li>
+                  <li>
+                    <a href="#">news</a>
+                  </li>
+                  <li>
+                    <a href="#">create</a>
+                  </li>
+                  <li>
+                    <a href="#">play</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#">careers</a>
+                  </li>
+                  <li>
+                    <a href="#">map</a>
+                  </li>
+                  <li>
+                    <a href="#">about us</a>
+                  </li>
+                  <li>
+                    <a href="#">term of use</a>
+                  </li>
+                  <li>
+                    <a href="#">Licenses</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+              <ul className="bottom-footer">
+                <li>
+                  <a href="#">@ Lords of the Lands</a>
+                </li>
+                <li>
+                  <a href="#">Terms and Conditions </a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
-export default Footer
-
-const Text = styled.h1`
-    color: #5c3dc5;
-    font-size: 250%;
-    font-family: uni-regular sans;
-    background: -webkit-linear-gradient(#2afff0, #7eff66);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    justify-content: center;
-    
-    @media screen and (max-width: 751px) {
-        font-size: 150%;
-        margin-bottom: 5%;
-    }
-`;
-
-const Image = styled.img`
-width: 50%;
-    @media screen and (max-width: 751px) {
-        width: 60%;
-    }
-`;
+export default Footer;
