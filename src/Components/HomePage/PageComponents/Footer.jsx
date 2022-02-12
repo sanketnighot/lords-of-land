@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+import Avtar from "./Avtar";
+import { Routes, Route, Link } from "react-router-dom";
 import { Container, Row, Col, Card, CardGroup } from "react-bootstrap/";
 import footerlogo from "./images/footer-logo.png";
 function Footer() {
@@ -34,10 +36,10 @@ function Footer() {
                     <a href="#">news</a>
                   </li>
                   <li>
-                    <a href="#">create</a>
+                  <a href="#">Avtar</a>
                   </li>
                   <li>
-                    <a href="#">play</a>
+                    <a href="#">Avtar</a>
                   </li>
                   <li>
                     <a href="#">FAQ</a>

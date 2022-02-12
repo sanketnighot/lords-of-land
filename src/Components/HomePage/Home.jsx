@@ -11,7 +11,6 @@ const Home = () => {
     return (
         <>
         <div>
-               
             <div className="navDisplay" id="navDisplay">
                 <Display/>
             </div>
@@ -24,6 +23,7 @@ const Home = () => {
             <div className="navFooter" id="navFooter">
                 <Footer/>
             </div>
+            
             <div>
             </div>
         </div>
