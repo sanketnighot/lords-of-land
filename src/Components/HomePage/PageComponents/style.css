@@ -847,12 +847,12 @@ svg:not(:root) {
 .play img {
   width: 317px;
 }
-.teams {
+/* .teams {
   background: url("./images/playerbackground.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 70vh;
-}
+} */
 .teams h2 {
   padding: 20px 0px;
   text-align: center;
@@ -1172,12 +1172,69 @@ svg:not(:root) {
   justify-content: flex-start;
 }
 .bottom-footer li {
-  margin: 0px 10px;
+  margin: 0px 0px;
   list-style: none;
 }
+.team-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kunal,.shubham {
+  margin: 19px;
+  overflow: hidden;
+  width: 225px;
+  height: 100%;
+  filter: grayscale(1);
+}
+.kunal h4,.shubham h4{
+  text-transform: capitalize;
+  padding-top: 10px;
+  font-size: 18px;
+
+  font-weight: 700;
+}
+.kunal h5,.shubham h5{
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #fff;
+}
+.kunal:hover,.shubham:hover{
+  filter: none;
+  transition: 1s ease-in-out;
+}
+.teams-main{
+margin: 50px 0px;
+}
+.kunal img ,.shubham img{
+  border-radius: 15px;
+  border: 1px solid white;
+  width: 100%;
+}
+
 .bottom-footer li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
+}
+.Team-h{
+  font-weight: 800;
+}
+.lin-icon{
+  cursor: pointer;
+  box-shadow: 0px 1px 6px 0px #000;
+  margin: 0 auto;
+  padding-top: 2px;
+  text-align: center;
+  height: 40px;
+  border: 1px solid #fff;
+  width: 40px;
+  list-style-type: none;
+  border-radius: 50%;
+}
+.lin-icon i{
+  padding-top: 7px;
+  color: #fff;
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 540px) {
   * {
@@ -1270,7 +1327,7 @@ svg:not(:root) {
     transform: rotate(62deg);
     width: 71px;
     margin-top: -9px;
-    margin-left: -5px;
+    margin-left: 0px;
     padding: 0px -3px;
     padding-right: 37px;
     padding-bottom: 48px;
@@ -1478,6 +1535,9 @@ svg:not(:root) {
   .bottom-footer li a {
     font-size: 14px;
   }
+  .team-wrap {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 375px) {
   .main-info,
@@ -1517,16 +1577,15 @@ svg:not(:root) {
   height: 40px;
   border: 1px solid #fff;
   width: 40px;
-  margin: 5px 7px;
+  margin: 5px 7px 7px 0px;
   list-style-type: none;
   border-radius: 50%;
 }
-.socio-wrap li a{
+.socio-wrap li a {
   padding-top: 10px;
   color: #fff;
- 
 }
-.socio-wrap li a i{
+.socio-wrap li a i {
   color: #fff;
   padding-top: 10px;
 }

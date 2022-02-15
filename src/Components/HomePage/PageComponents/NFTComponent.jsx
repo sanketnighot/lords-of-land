@@ -5,6 +5,7 @@ import React from "react";
 import { Container, Row, Col, Card, CardGroup } from "react-bootstrap/";
 import JoinDiscord from "./images/JoinDiscord.png";
 import styled from "styled-components";
+import Teams from "./Teams" 
 // import './style.css';
 import NFTs from "./images/NFT.png";
 const NFTComponent = () => {
@@ -52,7 +53,8 @@ const NFTComponent = () => {
           </Container>
         </Hut>
       </NFTDiv>
-      <div className="hut">
+      <div className="teams">
+        <Teams/>
       </div>
       <section className="meta">
         <Container>

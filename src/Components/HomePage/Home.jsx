@@ -7,6 +7,7 @@ import NavBar from './PageComponents/Navbar';
 import style from './PageComponents/style.css';
 import SimpleSlider from './PageComponents/SimpleSlider';
 import RoadmapNew from './PageComponents/RoadmapNew';
+import Teams from "./PageComponents/Teams"
 const Home = () => {
     return (
         <>
@@ -20,11 +21,9 @@ const Home = () => {
             <div className="navNFT" id="navNFT">
                 <NFTComponent/>
             </div>
-            
             <div className="navFooter" id="navFooter">
                 <Footer/>
             </div>
-           
         </div>
         </>
     )
