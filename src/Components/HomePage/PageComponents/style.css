@@ -15,6 +15,9 @@ h6 {
   -webkit-text-fill-color: transparent;
   font-family: "Poppins", sans-serif !important;
 }
+ul li {
+  list-style: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -405,8 +408,9 @@ h3 {
 #player {
   position: absolute;
   margin: 0px;
-  top: -16px;
-  right: -361px;
+  top: -19px;
+  right: -360px;
+
 }
 
 #inner {
@@ -550,7 +554,7 @@ h3 {
 .text {
   left: 137px;
   position: absolute;
-  height: 116px;
+  height: 114px;
   background: #162635;
   text-align: center;
   padding: 2px 5px;
@@ -601,11 +605,9 @@ h3 {
 .main-info-4 .tri-info .img-icon img {
   transform: rotate(62deg);
   width: 87px;
-  margin-top: -4px;
-  margin-left: 3px;
+  margin-left: 23px;
+  margin-top: 8px;
   padding: 0px -3px;
-  padding-right: 29px;
-  padding-bottom: 48px;
 }
 
 .circle {
@@ -715,17 +717,16 @@ h3 {
   left: -7px;
 }
 .s-cir {
-  width: 117px;
-  transform: rotate(-89deg);
-  height: 113px;
+  width: 114px;
+  transform: rotate(-90deg);
+  height: 110px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   border: 10px solid #162635;
   border-bottom: 0;
   box-sizing: border-box;
   position: relative;
-  background: #162635;
-}
+  background: #162635;}
 .text p {
   padding-left: 30px;
   letter-spacing: 0.5px !important;
@@ -1027,12 +1028,9 @@ svg:not(:root) {
 .logo1 img {
   padding: 50px 0px;
   width: 10%;
-  margin-left: 39vw;
 }
 #navNFT {
   height: 100%;
-  margin-top: 331px;
-  padding: 70px 0px;
 }
 .w-100 {
   z-index: -9999999999;
@@ -1041,6 +1039,7 @@ svg:not(:root) {
   border-radius: 25px;
   width: 100%;
 }
+
 .slide {
   overflow: hidden;
   z-index: 9999999;
@@ -1055,13 +1054,6 @@ svg:not(:root) {
 .dwkRqA {
   margin: 0 auto;
   width: 75%;
-}
-
-.navDisplay {
-  background-image: url(./images/Mainbackground.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .wlogo h1 {
   font-weight: 600;
@@ -1180,34 +1172,39 @@ svg:not(:root) {
   align-items: center;
   justify-content: center;
 }
-.kunal,.shubham {
+.kunal,
+.shubham {
   margin: 19px;
   overflow: hidden;
   width: 225px;
   height: 100%;
   filter: grayscale(1);
 }
-.kunal h4,.shubham h4{
+.kunal h4,
+.shubham h4 {
   text-transform: capitalize;
   padding-top: 10px;
   font-size: 18px;
 
   font-weight: 700;
 }
-.kunal h5,.shubham h5{
+.kunal h5,
+.shubham h5 {
   letter-spacing: 0.5px;
   text-transform: capitalize;
   font-size: 14px;
   color: #fff;
 }
-.kunal:hover,.shubham:hover{
+.kunal:hover,
+.shubham:hover {
   filter: none;
   transition: 1s ease-in-out;
 }
-.teams-main{
-margin: 50px 0px;
+.teams-main {
+  margin: 50px 0px;
 }
-.kunal img ,.shubham img{
+.kunal img,
+.shubham img {
   border-radius: 15px;
   border: 1px solid white;
   width: 100%;
@@ -1217,10 +1214,10 @@ margin: 50px 0px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
-.Team-h{
+.Team-h {
   font-weight: 800;
 }
-.lin-icon{
+.lin-icon {
   cursor: pointer;
   box-shadow: 0px 1px 6px 0px #000;
   margin: 0 auto;
@@ -1232,10 +1229,89 @@ margin: 50px 0px;
   list-style-type: none;
   border-radius: 50%;
 }
-.lin-icon i{
+.logo1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lin-icon i {
   padding-top: 7px;
   color: #fff;
 }
+.why-sec {
+  margin-top: 250px;
+}
+.why-lol-wrapper {
+  position: relative;
+}
+@keyframes coin-trans {
+  0% {
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.box-img {
+  width: 90%;
+}
+.eth {
+  width: 5%;
+}
+.eth2 {
+  top: 344px;
+  left: 502px;
+}
+.eth3 {
+  top: 150px;
+  left: 200px;
+}
+.eth4{
+  z-index: 0;
+  top: 82px;
+  left: 546px;
+}
+.why-lol-wrapper h5{
+margin-top: 40px;
+font-size: 34px;
+  text-align: center;
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+.Main-lol {
+  background: linear-gradient(#2afff0, #7eff66);
+}
+.eth1 {
+  top: 100px;
+  left: 100px;}
+.eth{
+  animation: coin-trans 5s infinite;
+}
+.why-sec {
+  margin-top: 620px;
+}
+.why-lol-cont p{
+text-align: center;
+}
+
+/* faq css */
+.acheader{
+  background: #000;
+}
+.accordion-button{
+  color: #fff;
+  background-color: #080e18;
+}
+.accordion-button:not(.collapsed) {
+  border: 2px solid #000;
+  background-color: #080f18;
+  color: #fff;
+}
+
+/* faq css end */
 @media screen and (min-device-width: 320px) and (max-device-width: 540px) {
   * {
     margin: 0px;
@@ -1266,8 +1342,8 @@ margin: 50px 0px;
     font-size: 80%;
   }
   .s-cir {
-    width: 83px;
-    height: 65px;
+    width: 81px;
+    height: 66px;
   }
   .img-icon {
     width: 55px;
@@ -1326,8 +1402,8 @@ margin: 50px 0px;
   .main-info-4 .tri-info .img-icon img {
     transform: rotate(62deg);
     width: 71px;
-    margin-top: -9px;
-    margin-left: 0px;
+    margin-left: 12px;
+    margin-top: -2px;
     padding: 0px -3px;
     padding-right: 37px;
     padding-bottom: 48px;
@@ -1393,10 +1469,10 @@ margin: 50px 0px;
     font-size: 13px;
   }
   .metaverse {
-    padding: 0px;
     margin: 0 auto;
     width: 100%;
-  }
+    padding: 51px 0px;
+}
   .meta {
     min-height: auto;
     height: auto;
@@ -1538,6 +1614,12 @@ margin: 50px 0px;
   .team-wrap {
     flex-wrap: wrap;
   }
+  .eth{
+    display: none;
+  }
+  .why-lol-cont{
+    padding: 1px;
+  }
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 375px) {
   .main-info,
@@ -1570,6 +1652,7 @@ margin: 50px 0px;
   justify-content: flex-start;
 }
 .socio-wrap li {
+  cursor: pointer;
   box-shadow: 0px 1px 6px 0px #000;
   margin: 0 auto;
   padding-top: 2px;
