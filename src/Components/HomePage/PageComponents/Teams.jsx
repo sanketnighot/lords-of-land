@@ -33,7 +33,7 @@ export default function Teams() {
                   <h4 className="text-center">kunal bhatia</h4>
 
                   <h5 className="text-center">
-                    Civil Engineer Btech IIT Delhi, Metaverse Architect,
+                    Civil Engineer Btech IIT Delhi, Metaverse Architect
                   </h5>
                   <div
                     className="lin-icon"

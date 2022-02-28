@@ -8,6 +8,8 @@ import style from './PageComponents/style.css';
 import SimpleSlider from './PageComponents/SimpleSlider';
 import RoadmapNew from './PageComponents/RoadmapNew';
 import Teams from "./PageComponents/Teams"
+import WhyLol from "./PageComponents/whyLol";
+import Faq from "./PageComponents/Faq";
 const Home = () => {
     return (
         <>
@@ -18,9 +20,15 @@ const Home = () => {
             <div className="navFeatures" id="navFeatures" style={{marginTop:"10%"}}>
                 <Features/>
             </div>
+            <div className="why-sec">
+                <WhyLol/>
+            </div>
             <div className="navNFT" id="navNFT">
                 <NFTComponent/>
             </div>
+            {/* <div className="Faq">
+                <Faq/>
+            </div> */}
             <div className="navFooter" id="navFooter">
                 <Footer/>
             </div>

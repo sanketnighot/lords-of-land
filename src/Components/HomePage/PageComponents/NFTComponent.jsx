@@ -150,17 +150,10 @@ const Reveal = styled.button`
 
 const NFTDiv = styled.div`
   align-items: center;
-
-  @media screen and (max-width: 763px) {
-    margin-top: 14%;
-    padding-top: 30%;
-  }
-
 `;
 
 const Para = styled.div`
   @media screen and (max-width: 763px) {
-    margin-top: 4%;
     margin-left: 0%;
     margin-right: 0%;
     padding: 1%;

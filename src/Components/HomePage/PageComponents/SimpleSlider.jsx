@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import slider2 from "./images/slider2.jpg";
 import slider5 from "./images/museum.png"
+import slider3 from  "./images/studio.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 class SimpleSlider extends React.Component {
@@ -33,6 +34,9 @@ responsive: [{
           </div>
           <div className="slide-image-container">
           <img src={slider5}/>
+          </div>
+          <div className="slide-image-container">
+          <img src={slider3}/>
           </div>
         </Slider>
       </div>
