@@ -10,12 +10,16 @@ import RoadmapNew from './PageComponents/RoadmapNew';
 import Teams from "./PageComponents/Teams"
 import WhyLol from "./PageComponents/whyLol";
 import Faq from "./PageComponents/Faq";
+import Mobileapp from '../../Mobileapp';
 const Home = () => {
     return (
         <>
         <div>
             <div className="navDisplay" id="navDisplay">
                 <Display/>
+            </div>
+            <div>
+                <Mobileapp/>
             </div>
             <div className="navFeatures" id="navFeatures" style={{marginTop:"10%"}}>
                 <Features/>

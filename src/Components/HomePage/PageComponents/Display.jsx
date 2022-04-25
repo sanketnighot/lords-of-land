@@ -1,11 +1,13 @@
 import React from "react";
 // import show from './images/cover.png';
 import { Location } from "react-router-dom";
-import hide from "./images/Mainbackgroundlol.png";
+import hide from "./images/Mainbackgroundhero.png";
 import styled from "styled-components";
 import NavBar from "./Navbar"
 import { Container, Row, Col } from "react-bootstrap/";
 import "./responsiveStyle.css";
+
+
 const Display = () => {
   return (
     <div
@@ -62,15 +64,14 @@ const Display = () => {
                 >
                   Own Land in the <strong>LOL Metaverse</strong>
                 </h2>
-                <div className="discord-btn" style={{ marginTop: "50px" }}>
+                <div className="discord-btn" style={{ marginTop: "25px" }}>
                   <DiscordBtn
                     style={{}}
                     onClick={() => {
-                     window.location.href = 'https://discord.com/invite/jp5Eewwu2P';
+                     window.location.href = '#';
                     }}
-                   
                   >
-                     JOIN DISCORD
+                     EXPLORE
                   </DiscordBtn>
                 </div>
               </ComingSoon>
@@ -87,7 +88,7 @@ const ComingSoon = styled.div`
   margin-top: 25%;
   @media screen and (max-width: 780px) {
     width: 100%;
-    display: block;
+    display: none;
     align-items: center;
     text-align: center;
     margin-top: 75%;
